@@ -1,7 +1,10 @@
 	body{
-			background-color: lightgray;
+			background-image: url("fundo_madeira.jpg");
+			background-repeat: no-repeat;
+			background-position: right top;
+			background-attachment: fixed;
 	}
-
+  
 	h1{
 
 		text-align: center;
