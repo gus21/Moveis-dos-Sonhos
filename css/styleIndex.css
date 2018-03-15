@@ -1,8 +1,5 @@
 	body{
-			background-image: url("fundo_madeira.jpg");
-			background-repeat: no-repeat;
-			background-position: right top;
-			background-attachment: fixed;
+			background-color: white;
 	}
   
 	h1{
