@@ -1,7 +1,6 @@
 	body{
-			background-color: white;
+		background: url('img/sala.jpg');
 	}
-  
 	h1{
 
 		text-align: center;
@@ -11,35 +10,44 @@
 		font-size: italic;
 
 	}
+	.back{
+		width: 100%;
+		height: auto;
+	}
+	#botoes{
+		width: 700px;
+		height: 69px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
 
 	button{
 
-			padding: 2% 3%;
-			text-decoration: none;
-			background-color: lightblue;
-			font-size: 200%;
-			border-radius: 15%;
-			color: brown;
-			font-size: italic;
+		padding: 2% 3%;
+		text-decoration: none;
+		background-color: lightblue;
+		font-size: 200%;
+		border-radius: 15%;
+		color: brown;
+		font-size: italic;
+		float:left;
 
 	}
-	.entrar{
-			position: absolute;
-			top: 10%;
-			left:75%;
+	/* .entrar{
+		top: 10%;
+		left:75%;
 	}
 	.cadastrar{
-				position: absolute;
-				top: 10%;
-				left:60%;
+		top: 10%;
+		left:60%;
 	}
 	.sobre{
-			position: absolute;
-			top: 25%;
-			left:60%;
+		top: 25%;
+		left:60%;
 	}
 	.sair{
-			position: absolute;
-			top: 25%;
-			left:75%;
-	}
+		top: 25%;
+		left:75%;
+		} */
