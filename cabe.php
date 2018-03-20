@@ -13,7 +13,7 @@
 				<h1>Moveis dos Sonhos </h1>
 			</th>
 			<td>
-				<a href="cadastro.php">Cadastar</a>
+				<a href="cadastro.php">Cadastrar</a>
 			</td>
 			<td>
 				<a href="entrar.php">Entrar</a>
