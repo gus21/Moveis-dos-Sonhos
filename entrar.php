@@ -7,7 +7,10 @@
 </head>
 
 <body>
-
+	
+	<?php 
+		include 'cabe.php';
+	?>
 
 	<p>Usuário Logado</p>
 

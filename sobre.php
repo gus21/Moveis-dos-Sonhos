@@ -3,14 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sobre</title>
-	<link rel="stylesheet" type="text/css" href="css/sobre.css">
+	<link rel="stylesheet" type="text/css" href="css/so.css">
 
 </head>
 
 <body>
 
+	<?php 
+		include 'cabe.php';
+	?>
+
 	<center>
-		<h1>Quem Somos?</h1>
+		<h2>Quem Somos?</h2>
 
 		<p>Abraão Henrique </p>
 		<p>Gustavo dos Santos </p>
@@ -19,7 +23,7 @@
 		<p>Tuanno Danyllo</p>
 		<img src="img/logoIfpe.jpeg">
 		<br>
-		<a href="index.html">
+		<a href="index.php">
 		<button>
 			Sair
 		</button>

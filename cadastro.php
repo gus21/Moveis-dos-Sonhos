@@ -7,7 +7,10 @@
 </head>
 
 <body>
-
+	
+	<?php 
+		include 'cabe.php';
+	?>
 
 <p>Cadastro do Usuário</p>
 
