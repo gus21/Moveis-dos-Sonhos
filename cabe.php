@@ -13,11 +13,14 @@
 				<h1>Móveis dos Sonhos </h1>
 			</th>
 			<td>
-				<a href="cadastro.php">Cadastrar</a>
-			</td>
+				<a href="index.php">Home</a>
+			</td>			
 			<td>
 				<a href="entrar.php">Entrar</a>
 			</td>
+			<td>
+				<a href="cadastro.php">Cadastrar</a>
+			</td>			
 			<td>
 				<a href="sobre.php">Sobre</a>
 			</td>
