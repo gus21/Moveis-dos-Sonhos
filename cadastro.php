@@ -12,10 +12,8 @@
 		include 'cabe.php';
 	?>
 
-<p>Cadastro do Usuário</p>
-
-<img src="img/desculpe.png">
+	<p>Cadastro do Usuário</p>
+	<img src="img/desculpe.png">
 
 </body>
-
 </html>
