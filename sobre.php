@@ -24,9 +24,6 @@
 		<img src="img/logoIfpe.jpeg">
 		<br>
 		<a href="index.php">
-			<button>
-				Sair
-			</button>
 	  </a>
 	</center>
 </body>
