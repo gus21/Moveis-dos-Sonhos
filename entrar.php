@@ -15,6 +15,10 @@
 	<p>Usuário Logado</p>
 
 	<img src="img/desculpe.png">
+
+	<?php
+	include 'rod.php'
+	?>
 	
 </body>
 </html>

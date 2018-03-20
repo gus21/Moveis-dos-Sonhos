@@ -15,5 +15,9 @@
 	<p>Cadastro do Usuário</p>
 	<img src="img/desculpe.png">
 
+	<?php
+		include 'rod.php'
+	?>
+
 </body>
 </html>
