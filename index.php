@@ -14,5 +14,9 @@
 
 	<img src="img/sala.jpg">
 
+	<?php
+	include 'rod.php';
+	?>
+
 </body>
 </html>

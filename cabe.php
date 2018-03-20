@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Moveis dos Sonhos</title>
-	<link rel="stylesheet" type="text/css" href="css/styleIndex.css"">
+	<link rel="stylesheet" type="text/css" href="css/styleIndex.css">
 </head>
 <body>
 
 	<table>
 		<tr>
 			<th>
-				<h1>Moveis dos Sonhos </h1>
+				<h1>Móveis dos Sonhos </h1>
 			</th>
 			<td>
 				<a href="cadastro.php">Cadastrar</a>

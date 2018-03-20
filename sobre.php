@@ -21,7 +21,7 @@
 		<p>Gustavo Dantas</p>
 		<p>Luiz Junior</p>
 		<p>Tuanno Danyllo</p>
-		<img src="img/logoIfpe.jpeg">
+		<img src="img/logoifpe.png">
 		<br>
 		<a href="index.php">
 			<button>
@@ -29,5 +29,9 @@
 			</button>
 	  </a>
 	</center>
+
+	<?php
+		include 'rod.php';
+	?>
 </body>
 </html>
