@@ -1,4 +1,4 @@
-}
+/*}
 	table{
  		background-color: lightblue;
  		color:brown;
@@ -21,4 +21,33 @@
 	h1{
 		font-size: 250%;
 
+	}*/
+	*  {
+    margin:0;
+    padding:0;
+  }
+  
+	a{
+		text-decoration: none;
+		color:brown;
+		font-size: 120%;
+
 	}
+html, body {height:100%;}
+
+.geral {
+    min-height:100%;
+    position:relative;
+    width:1000px;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.content {overflow:hidden;}
+.aside {width:200px;}
+.fleft {float:left;}
+.fright {float:right;}
