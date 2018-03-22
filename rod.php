@@ -21,7 +21,7 @@
 					<a> Tuanno Danyllo (tuannodanyllo26@gmail.com) </a>
 				</td>
 				<td>
-					<a> Luiz Carlos (luizcarlos@gmail.com) </a>
+					<a> Luiz Carlos (luizcarlosjr1999@gmail.com) </a>
 				</td>
 				<td>
 					<a> Abraão Baracho (abraaotsurugi@gmail.com) </a>
