@@ -19,7 +19,7 @@
 		<p>Abraão Henrique </p>
 		<p>Gustavo dos Santos </p>
 		<p>Gustavo Dantas</p>
-		<p>Luiz Junior</p>
+		<p>Luiz Carlos Jr</p>
 		<p>Tuanno Danyllo</p>
 		<img src="img/logoifpe.png">
 		<br>
