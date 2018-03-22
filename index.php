@@ -9,6 +9,7 @@
 <body>
 	
 	<?php 
+	session_start();
 		include 'cabe.php';
 	?>
 

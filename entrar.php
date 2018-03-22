@@ -10,12 +10,18 @@
 	
 	<?php 
 		include 'cabe.php';
+
+		session_start();
+
+		if (!isset($_SESSION['user'])) {
+			header('location: login.php');
+		}
+
+		echo "Ola, ". $_SESSION['user'].", voce estar logado";
+ 
 	?>
 
-	<p>Usuário Logado</p>
-
-	<img src="img/desculpe.png">
-
+	
 	<?php
 	include 'rod.php'
 	?>

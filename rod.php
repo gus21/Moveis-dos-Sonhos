@@ -24,7 +24,7 @@
 					<a> Luiz Carlos (luizcarlos@gmail.com) </a>
 				</td>
 				<td>
-					<a> Abraão Baracho (abraobaracho@gmail.com) </a>
+					<a> Abraão Baracho (abraaotsurugi@gmail.com) </a>
 				</td>
 				<td>
 					<a> Gustavo Pancosta (gustavopan@gmail.com) </a>

@@ -10,11 +10,11 @@
 	<table>
 		<tr>
 			<th>
-				<h1>Móveis dos Sonhos </h1>
+				<h1>
+					<a href="index.php">Móveis dos Sonhos</a>
+				</h1>
 			</th>
-			<td>
-				<a href="index.php">Home</a>
-			</td>			
+					
 			<td>
 				<a href="entrar.php">Entrar</a>
 			</td>
