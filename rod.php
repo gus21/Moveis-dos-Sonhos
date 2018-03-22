@@ -12,7 +12,7 @@
       <table>
 				<tr>
 					<th>
-						<h1>Desenvolvedores </h1>
+						<h2>Desenvolvedores </h2>
 					</th>
 				<td>
 					<a> Gustavo dos Santos (gustavostsmo7@gmail.com) </a>

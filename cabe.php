@@ -16,13 +16,13 @@
 			</th>
 					
 			<td>
-				<a href="entrar.php">Entrar</a>
+				<a href="entrar.php"><h3>Entrar</h3></a>
 			</td>
 			<td>
-				<a href="cadastro.php">Cadastrar</a>
+				<a href="cadastro.php"><h3>Cadastrar</h3></a>
 			</td>			
 			<td>
-				<a href="sobre.php">Sobre</a>
+				<a href="sobre.php"><h3>Sobre</h3></a>
 			</td>
 		</tr>
 	</table>	

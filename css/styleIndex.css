@@ -18,12 +18,15 @@
 	a{
 		text-decoration: none;
 		color:brown;
-		font-size: 150%;
+		font-size: 200%;
 
 	}
 	h1{
 		font-size: 250%;
 
+	}
+	h3{
+		font-size:150%;
 	}
 
 	/*h1{
