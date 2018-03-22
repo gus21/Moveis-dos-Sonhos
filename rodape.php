@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Móveis dos Sonhos</title>
-	<link rel="stylesheet" type="text/css" href="css/stylerod.css">
-</head>
-<body>
-	
+<!-- <?php //include 'css/styleRodape.css';
+ ?>	 -->
     <div class="footer">
         
       <table>
@@ -27,7 +20,7 @@
 					<a> Abraão Baracho (abraaotsurugi@gmail.com) </a>
 				</td>
 				<td>
-					<a> Gustavo Pancosta (gustavopan@gmail.com) </a>
+					<a> Gustavo Dantas (dz6.gustav@gmail.com) </a>
 				</td>
 			</tr>
 		</table>	

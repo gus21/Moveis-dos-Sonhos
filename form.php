@@ -18,9 +18,9 @@ fwrite($filePass, $pw);
 fclose($filePass);
 
 if ($use != null) {
-	header('location: entrar.php');
+	header('location: index.php');
 }else{
 	header('location: cadastro.php');
 }
 
- ?>
+?>

@@ -1,5 +1,5 @@
 	body{
-		background: url('img/sala.jpg');
+		/* background: url('img/sala.jpg'); */
 		
 	}
 	table{
@@ -18,16 +18,16 @@
 	a{
 		text-decoration: none;
 		color:brown;
-		font-size: 200%;
+		/* font-size: 200% */;
 
 	}
-	h1{
+	/* h1{
 		font-size: 250%;
-
+	
 	}
 	h3{
 		font-size:150%;
-	}
+	} */
 
 	/*h1{
 

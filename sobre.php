@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sobre</title>
-	<link rel="stylesheet" type="text/css" href="css/so.css">
+	<link rel="stylesheet" type="text/css" href="css/sobre.css">
 
 </head>
 
 <body>
 
 	<?php 
-		include 'cabe.php';
+		include 'cabecario.php';
 	?>
 
 	<center>
@@ -28,7 +28,7 @@
 	</center>
 
 	<?php
-		include 'rod.php';
+		include 'rodape.php';
 	?>
 </body>
 </html>

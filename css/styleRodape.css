@@ -43,13 +43,13 @@ html, body {height:100%;}
 .geral {
     min-height:100%;
     position:relative;
-    width:1000px;
+    
 }
 
 .footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
+	background-color: lightblue; 
+	width:auto;
+	bottom:0;
 }
 
 .content {overflow:hidden;}
