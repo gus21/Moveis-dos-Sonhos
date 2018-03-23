@@ -6,7 +6,7 @@
 <body>
 	
 	<?php 
-	session_start();
+	
 	include 'cabecario.php';
 	?>
 
@@ -14,7 +14,7 @@
 
 
 	<?php 
-	session_start();
+	
 	include 'rodape.php';
 	?>
 

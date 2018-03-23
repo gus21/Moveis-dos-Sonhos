@@ -11,9 +11,8 @@
 	include 'cabecario.php';
 	?>
 
-	<center>
-		<h2>Fazer Login</h2>
-	</center>
+		<h2 class="tx">Fazer Login</h2>
+	
 	
 	<div id="form">
 		<form action="do_login.php" method="POST">

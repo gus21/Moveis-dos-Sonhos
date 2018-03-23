@@ -1,3 +1,4 @@
+
 /*}
 	table{
  		background-color: lightblue;
@@ -25,6 +26,8 @@
 	h2{
 		font-size:200%;
 		position: relative;
+		color: brown;
+		
 	}
 
 	*  {
@@ -43,10 +46,11 @@ html, body {height:100%;}
 .geral {
     min-height:100%;
     position:relative;
-    
+   
 }
 
 .footer {
+	position: absolute;
 	background-color: lightblue; 
 	width:auto;
 	bottom:0;

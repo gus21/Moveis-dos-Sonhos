@@ -10,11 +10,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<table>
+	<table class="table">
 		<tr>
 			<th>
 				<h1>
-					<a href="index.php">Móveis dos Sonhos</a>
+					<a href="index.php" class="a">Móveis dos Sonhos</a>
 				</h1>
 			</th>
 			<td><p><?php 
@@ -35,11 +35,10 @@
 		<a href="sobre.php"><h3>Sobre</h3></a>
 	</td>
 	<td>
-		<a href="sobre.php"><h3>Sobre</h3></a>
-	</td>
-	<td><a href="sair.php">
+		<a href="sair.php">
           <span class="glyphicon glyphicon-log-out" style="width: 40px; height: auto; margin-left: 10px;"></span>
-        </a></td>
+        </a>
+    </td>
 </tr>
 </table>	
 
