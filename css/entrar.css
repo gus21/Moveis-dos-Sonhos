@@ -24,7 +24,7 @@
 }
 
 body{
-	background-image: url('imgCss/entrar.jpg');
+	background-image: url('../img/entrar.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 }

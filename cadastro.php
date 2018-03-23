@@ -18,7 +18,7 @@
 	
 
 	<div id="form">
-		<form action="formu.php" method="POST">
+		<form action="form.php" method="POST">
 			<input type="text" name="Usuario" placeholder="Usuario" required title="Nome de Usuario" class="c"><p>
 				<input type="password" name="pass" placeholder="Senha" required class="c"><p>
 					<input type="submit" value="Criar" class="b">

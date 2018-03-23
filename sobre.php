@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sobre</title>
-	<link rel="stylesheet" type="text/css" href="css/so.css">
+	<link rel="stylesheet" type="text/css" href="css/sobre.css">
 
 </head>
 

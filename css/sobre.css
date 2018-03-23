@@ -11,8 +11,6 @@
 	margin-left: 44%;
 } */
 body{
-		background-image: url("imgCss/sobre.jpg");
-		background-repeat: no-repeat;
-		
-		
+		background-image: url("../img/sobre.jpg");
+		background-repeat: no-repeat;	
 	}
