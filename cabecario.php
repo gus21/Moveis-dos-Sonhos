@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<?php session_start(); ?>
 	<table class="table">
 		<tr>
 			<th>
@@ -17,17 +18,17 @@
 					<a href="index.php" class="a">Móveis dos Sonhos</a>
 				</h1>
 			</th>
-			<td><p><?php 
-			session_start();
-			if(isset($_SESSION['user'])){
-				echo "Olá, ". $_SESSION['user'];
-			}
-			?>  </p>
+			<td><p>
+			<?php if(isset($_SESSION['user'])) : ?>
+				<?php echo "Olá, ". $_SESSION['user']; ?>
+			<?php endif ?>
+			<?php if (!isset($_SESSION['user'])) :?>
+				<a href="login.php"><h3>Entrar</h3></a>
+			<?php endif ?>
+			 </p>
+			
 	</td>
 
-	<td>
-		<a href="login.php"><h3>Entrar</h3></a>
-	</td>
 	<td>
 		<a href="cadastro.php"><h3>Cadastrar</h3></a>
 	</td>			
@@ -36,7 +37,7 @@
 	</td>
 	<td>
 		<a href="sair.php">
-          <span class="glyphicon glyphicon-log-out" style="width: 40px; height: auto; margin-left: 10px;"></span>
+          <span class="glyphicon glyphicon-log-out" style="width: 40%; height: auto; margin-left: 10%;"></span>
         </a>
     </td>
 </tr>
