@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$user = $_POST['Usuario'];
+$user = $_POST['usuario'];
 $pw = $_POST['senha'];
 
 function autenticar ($a, $b){

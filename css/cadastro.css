@@ -3,29 +3,4 @@ body{
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
-.b{
-	background-color: lightblue;
-	padding: 1% 1%;
-	font-size: 150%;
-	color:brown;
-	margin-left: 47%;
-
-
-}
-.c{
-	font-size: 150%;
-	margin-left: 42%;
-
-}
-#form {
-	margin-top: 10%;
-
-}
-.tx{
-	text-align: center;
-	color:lightblue;
-	font-size: 250%;
-	text-shadow: 3px 1px brown;
-}
-
 

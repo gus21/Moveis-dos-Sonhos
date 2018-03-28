@@ -1,8 +1,8 @@
 <?php 
 session_start();
 
-$use=$_POST['Usuario'];
-$pw=$_POST['pass'];
+$use=$_POST['usuario'];
+$pw=$_POST['senha'];
 
 
 $fileUser=fopen('usuarios.txt', 'w+');
