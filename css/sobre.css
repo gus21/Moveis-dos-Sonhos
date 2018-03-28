@@ -1,11 +1,83 @@
-	h2{
+
+#missao{
+	width: 250px;
+	height:relative;
+	padding: 15px;
+	background-color:lightblue;
+	box-shadow: 0 2px 30px #000;
+	text-align: justify;
+	color: brown;
+}
+#missao{
+	position: relative;
+  	top: 15px;
+  	left: 30px;
+}
+#missao:hover{
+	width: 250px;
+	height:relative;
+	padding: 15px;
+	background-color:#009cff;
+	box-shadow: 0 2px 30px #000;
+	text-align: justify;
+	color: brown;
+}
+
+#valores{
+	width: 250px;
+	height:relative;
+	padding: 15px;
+	background-color:lightblue;
+	box-shadow: 0 2px 15px #000;
+	text-align: justify;
+	color: brown;
+}
+#valores{
+	position: relative;
+  	top: -207px;
+  	left: 350px;
+}
+#valores:hover{
+	width: 250px;
+	height:relative;
+	padding: 15px;
+	background-color:#009cff;
+	box-shadow: 0 2px 5px #000;
+	text-align: justify;
+	color: brown;
+}
+#visao{
+	width: 250px;
+	height:relative;
+	padding: 15px;
+	background-color:lightblue;
+	box-shadow: 0 2px 15px #000;
+	text-align: justify;
+	color: brown;
+}
+#visao{
+	position: relative;
+  	top: -455px;
+  	left: 675px;
+}
+#visao:hover{
+	width: 250px;
+	height:relative;
+	padding: 15px;
+	background-color:#009cff;
+	box-shadow: 0 2px 5px #000;
+	text-align: justify;
+	color: brown;
+}
+    h3{
 		text-align: relative;
-		font-size: 200%
+		font-size: 200%;
+		
 	}
 
 	p{
-		text-align: center;
-		font-size: 150%;
+		
+		font-size: 125%;
 	}
 /* 	img{
 	margin-left: 44%;
@@ -14,3 +86,4 @@ body{
 		background-image: url("../img/sobre.jpg");
 		background-repeat: no-repeat;	
 	}
+*/

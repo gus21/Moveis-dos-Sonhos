@@ -12,8 +12,28 @@
 	<?php 
 		include 'cabecario.php';
 	?>
-
-	<center>
+	<div id="missao">
+		<h3> Missão</h3>
+		<p>	Garantir a excelência no
+		desenvolvimento e entrega de
+		sites funcionais, confiáveis
+		e que tenham usabilidade.</p>
+	</div>
+	<div id="valores">
+		<h3> Valores</h3>
+		<p>Ter a preferência do cliente
+		e oferecer um sistema seguro 
+		para o mesmo. Qualidade do pessoal e 
+		excelência no atendimento e
+		no desenvolvimento Web.</p>
+	</div>
+	<div id="visao">
+		<h3>Visão</h3>
+		<p>Ser uma referência no
+		desenvolvimento de aplicações 
+		para a web.</p>
+	</div>
+	<!--<center>
 		<h2>Quem Somos?</h2>
 
 		<p>Abraão Henrique </p>
@@ -25,7 +45,7 @@
 		<br>
 		<a href="index.php">
 	  </a>
-	</center>
+	</center>-->
 
 	<?php
 		include 'rodape.php';
