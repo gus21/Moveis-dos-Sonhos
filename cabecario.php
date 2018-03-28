@@ -39,7 +39,7 @@
     </td>
 	<td class="td">
 		<a href="sair.php" class="a">
-          <span class="glyphicon glyphicon-log-out" style="width: 40%; height: auto; margin-left: 10%;"></span>
+          <center><span class="glyphicon glyphicon-log-out" ></span><center>
         </a>
     </td>
    
