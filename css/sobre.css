@@ -11,7 +11,7 @@
 #missao{
 	position: relative;
   	top: 15px;
-  	left: 30px;
+  	left: 110px;
 }
 #missao:hover{
 	width: 250px;
@@ -34,8 +34,8 @@
 }
 #valores{
 	position: relative;
-  	top: -207px;
-  	left: 350px;
+  	top: -257px;
+  	left: 500px;
 }
 #valores:hover{
 	width: 250px;
@@ -57,8 +57,8 @@
 }
 #visao{
 	position: relative;
-  	top: -455px;
-  	left: 675px;
+  	top: -555px;
+  	left: 875px;
 }
 #visao:hover{
 	width: 250px;
@@ -77,7 +77,8 @@
 
 	p{
 		
-		font-size: 125%;
+		font-size: 155%;
+		font-style:italic;
 	}
 /* 	img{
 	margin-left: 44%;

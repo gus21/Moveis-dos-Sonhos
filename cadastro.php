@@ -25,7 +25,7 @@
 <!-- Where all the magic happens -->
 <!-- LOGIN FORM -->
 <div class="text-center" style="padding:50px 0">
-	<div class="logo">Cadastrar</div>
+	<div class="logo"><em>Cadastrar</em></div>
 	<!-- Main Form -->
 	<div class="login-form-1">
 		<form action="form.php" id="login-form" class="text-left" method="POST">

@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/produtos.css">
 </head>
 <body>
 	<?php include 'cabecario.php'; ?>
