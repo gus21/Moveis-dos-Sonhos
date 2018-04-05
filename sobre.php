@@ -8,7 +8,9 @@
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<style>
-	body{margin-top:20px;}
+	body{margin-top:20px;
+	background-image: url("https://trello-backgrounds.s3.amazonaws.com/SharedBackground/2560x1707/31e2b1391c87caa9f06c1f6f30cd0a17/photo-1520858362407-812e1188b1eb");
+	}
 
 	ul.notes li {
 		margin: 10px 40px 50px 0px;
