@@ -1,90 +1,69 @@
 
-#missao{
-	width: 250px;
-	height:relative;
-	padding: 15px;
-	background-color:lightblue;
-	box-shadow: 0 2px 30px #000;
-	text-align: justify;
-	color: brown;
-}
-#missao{
-	position: relative;
-  	top: 15px;
-  	left: 110px;
-}
-#missao:hover{
-	width: 250px;
-	height:relative;
-	padding: 15px;
-	background-color:#009cff;
-	box-shadow: 0 2px 30px #000;
-	text-align: justify;
-	color: brown;
+body{margin-top:20px;}
+
+ul.notes li {
+  margin: 10px 40px 50px 0px;
+  float: left;
 }
 
-#valores{
-	width: 250px;
-	height:relative;
-	padding: 15px;
-	background-color:lightblue;
-	box-shadow: 0 2px 15px #000;
-	text-align: justify;
-	color: brown;
+ul.notes li, ul.tag-list li {
+  list-style: none;
 }
-#valores{
-	position: relative;
-  	top: -257px;
-  	left: 500px;
-}
-#valores:hover{
-	width: 250px;
-	height:relative;
-	padding: 15px;
-	background-color:#009cff;
-	box-shadow: 0 2px 5px #000;
-	text-align: justify;
-	color: brown;
-}
-#visao{
-	width: 250px;
-	height:relative;
-	padding: 15px;
-	background-color:lightblue;
-	box-shadow: 0 2px 15px #000;
-	text-align: justify;
-	color: brown;
-}
-#visao{
-	position: relative;
-  	top: -555px;
-  	left: 875px;
-}
-#visao:hover{
-	width: 250px;
-	height:relative;
-	padding: 15px;
-	background-color:#009cff;
-	box-shadow: 0 2px 5px #000;
-	text-align: justify;
-	color: brown;
-}
-    h3{
-		text-align: relative;
-		font-size: 200%;
-		
-	}
 
-	p{
-		
-		font-size: 155%;
-		font-style:italic;
-	}
-/* 	img{
-	margin-left: 44%;
-} */
-body{
-		background-image: url("../img/sobre.jpg");
-		background-repeat: no-repeat;	
-	}
-*/
+ul.notes li div small {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 10px;
+}
+
+div.rotate-1 {
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+}
+
+div.rotate-2 {
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+}
+
+.lazur-bg {
+  background-color: #23c6c8;
+  color: #ffffff;
+}
+
+.red-bg {
+  background-color: #ed5565;
+  color: #ffffff;
+}
+
+.navy-bg {
+  background-color: #1ab394;
+  color: #ffffff;
+}
+
+.yellow-bg {
+  background-color: #f8ac59;
+  color: #ffffff;
+}
+
+ul.notes li div {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  height: 210px;
+  width: 210px;
+  padding: 1em;
+  -moz-box-shadow: 5px 5px 7px #212121;
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-transition: -webkit-transform 0.15s linear;
+}
+
+
