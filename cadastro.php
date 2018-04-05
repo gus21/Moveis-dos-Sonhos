@@ -34,11 +34,11 @@
 				<div class="login-group">
 					<div class="form-group">
 						<label for="lg_username" class="sr-only">Login</label>
-						<input type="text" class="form-control" id="lg_username" name="usuario" placeholder="Login">
+						<input type="text" class="form-control" id="lg_username" name="usuario" placeholder="Login" required>
 					</div>
 					<div class="form-group">
 						<label for="lg_password" class="sr-only">Senha</label>
-						<input type="password" class="form-control" id="lg_password" name="senha" placeholder="Senha">
+						<input type="password" class="form-control" id="lg_password" name="senha" placeholder="Senha" required>
 					</div>
 				</div>
 				<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
