@@ -1,10 +1,29 @@
-img{
+.imagem{
+	
+float: left;
+background-color:blue;
+width:300px;
+height: 300px;
+color: white;
+padding:10px;
+margin: 10px;
+padding-bottom:30px;
 
-	margin-right: 200px;
+
+
 }
 
 h3{
 
 	font-style:italic;
+	position:relative;
+	bottom: 10px;
+
+}
+
+img{
+
+	width:250px;
+	height: 250px;
 	
 }

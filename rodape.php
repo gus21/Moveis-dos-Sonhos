@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/rodape.css">
-</head>
-<body>
-	<div class="footer">
+<div class="footer">
         
       <table>
 				<tr>
