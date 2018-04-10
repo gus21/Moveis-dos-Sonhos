@@ -79,10 +79,10 @@
 		color: #000;
 		display: block;
 		position: relative;
-		top:40px;
-		height: 240px;
+		top:35px;
+		height: 220px;
 		width: 240px;
-		padding: 1em;
+		padding: 0.5em;
 		-moz-box-shadow: 5px 5px 7px #212121;
 		-webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
 		box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
@@ -135,16 +135,37 @@
 				</li>  
 				<li>
 					<div class="rotate-2 green-bg">
-						<h4>Quem somos?</h4>
-						<p>Abraão Henrique </p>
-						<p>Gustavo dos Santos</p>
-						<p>Gustavo Dantas</p>
-						<p>Luiz Carlos Jr</p>
-						<p>Tuanno Danyllo</p>
+						<h4>Abraão Henrique</h4>
+						<p>abraaotsurugi@gmail.com </p>
 					</div>
-				</li>  
+				</li> 
+				 <li>
+					<div class="rotate-2 green-bg">
+						<h4>Luiz carlos jr</h4>
+						<p>luizcarlosjr1999@gmail.com</p>
+						<p>@lulu_carlosjr</p>
+						<p>97912-5318</p>
+					</div>
+				</li> 
+				<li>
+					<div class="rotate-1 yellow-bg">
+						<h4>Gustavo Dantas</h4>
+						<p>dz6.gustav@gmail.com</p>
+					</div>
+				</li>
+				<li>
+					<div class="rotate-2 red-bg">
+						<h4>Gustavo dos Santos</h4>
+						<p>dz6.gustav@gmail.com</p>
+					</div>
+				</li> 
+				<li>
+					<div class="rotate-1 lazur-bg">
+						<h4>Tuanno Danyllo</h4>
+						<p>tuannodanyllo26@gmail.com</p>
+					</div>
+				</li> 
 			</ul>  
-			<center><img src="img/logoifpe.png"></center>
 		</div>
 	</div>
 	<body>
