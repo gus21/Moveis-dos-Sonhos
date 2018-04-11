@@ -1,40 +1,26 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
+#tabelacabecario{
+	background-color: brown;
+}
+#tdcabecario{
+	width: 1%;
+}
+#thcabecario{
+	width: 10%;
+}
+#a{
+	text-decoration: none;
+	color:lawngreen;
+}
+.glyphicon{
+	 font-size: 2em;
+    padding-top: 15px;
 
-Project     : Aether
-Version     : 1.0
-Last change : 2015/03/27
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. General Structure
-2. Anchor Link
-3. Text Outside the Box
-4. Main Form
-5. Login Button
-6. Form Invalid
-7. Form - Main Message
-8. Custom Checkbox & Radio
-9. Misc
--------------------------------------------------------------------*/
-/*=== 1. General Structure ===*/
-html,
-body {
-  background: #efefef;
-  /* padding: 10px;
-     */  font-family: 'Varela Round';
 }
-/*=== 2. Anchor Link ===*/
-a {
-  color: #aaaaaa;
-  transition: all ease-in-out 200ms;
+#rodape{
+	position:relative;
+	background-color: brown;
+	top: 850px; 
 }
-a:hover {
-  color: #333333;
-  text-decoration: none;
-}
-/*=== 3. Text Outside the Box ===*/
 .etc-login-form {
   color: #919191;
   padding: 10px 20px;
@@ -79,7 +65,7 @@ a:hover {
   border-bottom: 0;
 }
 .login-group {
-  background: lawngreen;
+  background: lightblue;
   color: #999999;
   border-radius: 8px;
   padding: 10px 20px;
@@ -285,8 +271,7 @@ label:hover:before {
   color: white;
   font-weight: bold;
 }
-body{
-  background-image: url('../img/entrar.jpg');
-  background-repeat: no-repeat;
-  background-size: 100%;
+#loginBackground{
+	background-color: lightgreen;
 }
+

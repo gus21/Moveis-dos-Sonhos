@@ -47,8 +47,6 @@
 	</div>
 	<!-- end:Main Form -->
 </div>
-</div>
-			
-		
-		</body>
-		</html>
+</div>	
+</body>
+</html>
