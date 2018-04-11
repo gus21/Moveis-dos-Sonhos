@@ -1,0 +1,24 @@
+#tabelacabecario{
+	background-color: brown;
+}
+#tdcabecario{
+	width: 1%;
+}
+#thcabecario{
+	width: 10%;
+}
+#a{
+	text-decoration: none;
+	color:lawngreen;
+}
+#glyphicon{
+	 font-size: 2em;
+    padding-top: 15px;
+
+}
+#rodape{
+	position: absolute;
+	background-color: brown; 
+	width:auto;
+	bottom:0;
+}

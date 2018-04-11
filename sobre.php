@@ -133,79 +133,9 @@
 						no desenvolvimento Web.</p>
 					</div>
 				</li>  
-				<li>
-					<div class="rotate-2 green-bg">
-						<h4>Abraão Henrique</h4>
-						<p>abraaotsurugi@gmail.com </p>
-					</div>
-				</li> 
-				 <li>
-					<div class="rotate-2 green-bg">
-						<h4>Luiz carlos jr</h4>
-						<p>luizcarlosjr1999@gmail.com</p>
-						<p>@lulu_carlosjr</p>
-						<p>97912-5318</p>
-					</div>
-				</li> 
-				<li>
-					<div class="rotate-1 yellow-bg">
-						<h4>Gustavo Dantas</h4>
-						<p>dz6.gustav@gmail.com</p>
-					</div>
-				</li>
-				<li>
-					<div class="rotate-2 red-bg">
-						<h4>Gustavo dos Santos</h4>
-						<p>dz6.gustav@gmail.com</p>
-					</div>
-				</li> 
-				<li>
-					<div class="rotate-1 lazur-bg">
-						<h4>Tuanno Danyllo</h4>
-						<p>tuannodanyllo26@gmail.com</p>
-					</div>
-				</li> 
+					
 			</ul>  
 		</div>
 	</div>
 	<body>
-
-
-	<!-- <div id="missao">
-		<h3> Missão</h3>
-		<p>	Garantir a excelência no
-		desenvolvimento e entrega de
-		sites funcionais, confiáveis
-		e que tenham usabilidade.</p>
-	</div>
-	<div id="valores">
-		<h3> Valores</h3>
-		<p>Ter a preferência do cliente
-		e oferecer um sistema seguro 
-		para o mesmo. Qualidade do pessoal e 
-		excelência no atendimento e
-		no desenvolvimento Web.</p>
-	</div>
-	<div id="visao">
-		<h3>Visão</h3>
-		<p>Ser uma referência no
-		desenvolvimento de aplicações 
-		para a web.</p>
-	</div> -->
-	<!--<center>
-		<h2>Quem Somos?</h2>
-
-		<p>Abraão Henrique </p>
-		<p>Gustavo dos Santos </p>
-		<p>Gustavo Dantas</p>
-		<p>Luiz Carlos Jr</p>
-		<p>Tuanno Danyllo</p>
-		<img src="img/logoifpe.png">
-		<br>
-		<a href="index.php">
-	  </a>
-	</center>-->
-
-	<?php
-	include 'rodape.php';
-	?>
+	
