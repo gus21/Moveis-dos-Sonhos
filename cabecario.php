@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 	<?php session_start(); ?>
@@ -48,24 +49,5 @@
 		</td>
 		</tr>
 	</table>
-
-<div>
-        
-    <table id="rodape">
-		<tr>
-			<td id="tdcabecario">
-				<a href="quemSomos.php" id="a">
-					<h4>Quem Somos</h4>
-				</a>
-			</td>
-			<td id="tdcabecario">
-				<a href="sobre.php" id="a">
-					<h4>Sobre</h4>
-				</a>
-			</td>
-		</tr>
-	</table>	
-</div>	
-
 </body>
 </html>

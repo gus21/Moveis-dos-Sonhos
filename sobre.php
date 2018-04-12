@@ -137,5 +137,12 @@
 			</ul>  
 		</div>
 	</div>
-	<body>
+	</body>
+
+	<?php 
+	
+	include 'rodape.php';
+	?>	
+</body>
+</html>
 	
