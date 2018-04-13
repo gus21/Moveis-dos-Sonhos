@@ -48,12 +48,12 @@
   height:auto;
 }
 .login-form-1 .form-control::-webkit-input-placeholder {
-  color: #999999;
+  color: #3D2B1F;
 }
 .login-form-1 .form-control:-moz-placeholder,
 .login-form-1 .form-control::-moz-placeholder,
 .login-form-1 .form-control:-ms-input-placeholder {
-  color: #999999;
+  color: #3D2B1F;
 }
 .login-form-1 .form-group {
   margin-bottom: 0;
@@ -65,8 +65,8 @@
   border-bottom: 0;
 }
 .login-group {
-  background: brown;
-  color: #999999;
+  background: #09ACDB;
+  color: #3D2B1F;
   border-radius: 8px;
   padding: 10px 20px;
 }
@@ -78,8 +78,8 @@
   position: absolute;
   right: -25px;
   top: 50%;
-  background: brown;
-  color: #999999;
+  background: #09ACDB;
+  color: #3D2B1F;
   padding: 11px 0;
   width: 50px;
   height: 50px;

@@ -22,7 +22,6 @@
 			<td id="tdcabecario">
 				<div class="container">
 					<div class="search">
-						
 						<input type="text" class="form-control input-sm" maxlength="64" placeholder="Busca" />
 						<button type="submit" class="btn btn-primary btn-sm">Busca</button>
 					</div>
