@@ -108,7 +108,7 @@
 			<ul class="notes">
 				<li>
 					<div class="rotate-1 lazur-bg">
-						<h4>Visão</h4>
+						<h3>Visão</h3>
 						<p id="centro">Ser uma referência no
 							desenvolvimento de aplicações 
 						para a web.</p>
@@ -116,8 +116,8 @@
 				</li>   
 				<li>
 					<div class="rotate-2 red-bg">
-						<h4>Missão</h4>
-						<p>Garantir a excelência no
+						<h3>Missão</h3>
+						<p id="centro">Garantir a excelência no
 							desenvolvimento e entrega de
 							sites funcionais, confiáveis
 						e que tenham usabilidade.</p>
@@ -125,12 +125,10 @@
 				</li>    
 				<li>
 					<div class="rotate-1 yellow-bg">
-						<h4>Valores</h4>
-						<p>Ter a preferência do cliente
+						<h3>Valores</h3>
+						<p id="centro">Ter a preferência do cliente
 							e oferecer um sistema seguro 
-							para o mesmo. Qualidade do pessoal e 
-							excelência no atendimento e
-						no desenvolvimento Web.</p>
+							para o mesmo. Ter excelência no desenvolvimento Web.</p>
 					</div>
 				</li>  
 					
