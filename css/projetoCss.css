@@ -1,5 +1,5 @@
 #tabelacabecario{
-	background-color: brown;
+	background-color: #09ACDB;
 }
 #tdcabecario{
 	width: 1%;
@@ -9,7 +9,7 @@
 }
 #a{
 	text-decoration: none;
-	color:lawngreen;
+	color:#3D2B1F;
 }
 #glyphicon{
 	 font-size: 2em;
@@ -17,9 +17,9 @@
 
 }
 #rodape{
-	position: bottom 0;
-	background-color: brown;
-  width: 100%; 
+	position: relative;
+	background-color: #09ACDB;
+  top: 600px; 
 }
 .etc-login-form {
   color: #919191;
@@ -268,16 +268,55 @@ label:hover:before {
 .logo {
   padding: 15px 0;
   font-size: 25px;
-  color: white;
+  color: black;
   font-weight: bold;
 }
 #loginBackground{
-	background-color: lightgreen;
+	background-image: url(../img/cadastro.jpg);
 }
+#indexBackground{
+  background-image: url(../img/index.jpg);
+}
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 30px;
+    position: relative;
+    left: 10px;
+    float: left;
+    line-height: 22px;
+}
+
+.search input {
+        position: relative;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 30px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius:1px;
+}
+.search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+}
+.btn {
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius:1px;
+}
+
 
 /* INDEX */
 
-* CROUSAL-STARTS */
+/* CROUSAL-STARTS 
 #sg-carousel {
     position: relative;
     height: 84vh;
@@ -308,7 +347,7 @@ label:hover:before {
     background-image: none;
     background-repeat: no-repeat;
     opacity: 0;
-    /* text-shadow: none; */
+    /* text-shadow: none; 
     transition: all 0.8s ease 0s;
 }
 .carousel-control {
@@ -325,7 +364,7 @@ label:hover:before {
     color: black;
 }
 .carousel-inner {
-   /*  box-shadow: 2px 6px 21px; */
+   /*  box-shadow: 2px 6px 21px; 
 }
 .fa-angle-right,
 .fa-angle-left {
