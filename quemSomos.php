@@ -74,7 +74,7 @@
 		color: #ff6600;
 	}
 	img{
-	width: 100%;
+	width: 10%;
 
 	}
 	#centro{
