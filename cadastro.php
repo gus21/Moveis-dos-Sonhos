@@ -38,6 +38,10 @@
 						<label for="lg_password" class="sr-only">Senha</label>
 						<input type="password" class="form-control" id="lg_password" name="senha" placeholder="Senha" required>
 					</div>
+					<div class="form-group">
+						<label for="lg_password" class="sr-only">Email</label>
+						<input type="email" class="form-control" id="lg_password" name="email" placeholder="Email" required>
+					</div>
 				</div>
 				<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
 			</div>

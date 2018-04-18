@@ -27,6 +27,11 @@
 					</div>
 				</div>
 			</td>
+			
+			<td id="tdcabecario">
+			<a href="produtos.php" id="a"><h3>Produtos</h3></a>
+			</td>
+
 			<td id="tdcabecario"><p>
 				<?php if(isset($_SESSION['user'])) : ?>
 					<h3 id="a">
@@ -47,14 +52,11 @@
 		<?php if (isset($_SESSION['user'])) :?>
 			<td id="tdcabecario">
 				<a href="sair.php" id="a">
-					<center><span class="glyphicon glyphicon-log-out" id="glyphicon"></span><center>
+					<center><span class="glyphicon glyphicon-log-out" id="glyphicon"></span>Sair<center>
 					</a>
 				</td>
 		<?php endif ?>
 			
-		<td id="tdcabecario">
-			<a href="produtos.php" id="a"><h3>Produtos</h3></a>
-		</td>
 		</tr>
 	</table>
 
