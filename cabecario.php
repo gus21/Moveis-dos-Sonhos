@@ -8,57 +8,41 @@
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/	bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="test.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext,vietnamese" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/produtos.css">
+
+
+
 
 </head>
 <body>
+	<script type="text/javascript" src="js/wz_tooltip.js"></script>
 	<?php session_start(); ?>
-	<table id="tabelacabecario">
-		<tr>
-			<th id="thcabecario">
-				<h1>
-					<a href="index.php" id="a">Móveis dos Sonhos</a>
-				</h1>
-			</th>
-			<td id="tdcabecario">
-				<div class="container">
-					<div class="search">
-						<input type="text" class="form-control input-sm" maxlength="64" placeholder="Busca" />
-						<button type="submit" class="btn btn-primary btn-sm">Busca</button>
-					</div>
-				</div>
-			</td>
-			
-			<td id="tdcabecario">
-			<a href="produtos.php" id="a"><h3>Produtos</h3></a>
-			</td>
 
-			<td id="tdcabecario"><p>
-				<?php if(isset($_SESSION['user'])) : ?>
-					<h3 id="a">
-						<?php echo "Olá, ". $_SESSION['user']; ?>
-					</h3>
-				<?php endif ?>
-				<?php if (!isset($_SESSION['user'])) :?>
-					<a href="login.php" id="a"><h3>Entrar</h3></a>
-				<?php endif ?>
-			</p>
-			
-		</td>
-		<td id="tdcabecario">
-			<?php if (!isset($_SESSION['user'])) :?>
-				<a href="cadastro.php" id="a"><h3>Cadastrar</h3></a>
+	<header>
+		<nav>
+			<?php if(isset($_SESSION['user'])) : ?>
+				<span><?php echo "Olá, ". $_SESSION['user']; ?></span>
 			<?php endif ?>
-		</td>
-		<?php if (isset($_SESSION['user'])) :?>
-			<td id="tdcabecario">
-				<a href="sair.php" id="a">
-					<center><span class="glyphicon glyphicon-log-out" id="glyphicon"></span>Sair<center>
-					</a>
-				</td>
-		<?php endif ?>
-			
-		</tr>
-	</table>
-
-</body>
-</html>
+			<div id="logo">
+				<span>Móveis dos Sonhos</span>
+			</div>
+			<?php if (!isset($_SESSION['user'])) :?>
+				<div class="options">
+					<a href="cadastro.php" class="link-header" ><span  onmouseover="tip(Cadastre-se)" id="botao-cadastro" class="glyphicon glyphicon-log-in"></span></a>
+				</div>
+			<?php endif ?>
+			<div class="options">
+				<a href="produtos.php" class="link-header"><span id= "botao-produtos" class="glyphicon glyphicon-tags"></span></a>
+			</div>
+		</nav>
+		
+	</header>
+	<section>
