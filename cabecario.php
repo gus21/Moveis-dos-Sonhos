@@ -1,3 +1,6 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,43 +9,66 @@
 	<link rel="stylesheet" type="text/css" href="css/projetoCss.css">
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/	bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="test.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext,vietnamese" rel="stylesheet">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/produtos.css">
+	<div class="menu">
+    <div class="container-fluid">
+   		<div>
+			<ul class="nav navbar-nav navbar-right">
+			<li class="li">
+				<a href="index.php" class=" glyphicon glyphicon-home btn btn-primary btn-circle btn-lg" >
+				</a>
+			</li>
+			<li class="li">
+			 <h4>Moveis Dos Sonhos</h4>
+			</li>
+			<li class="li">
+				<div class="container">
+				<div class="search">
+					<input type="text" class="form-control input-sm" maxlength="64" placeholder="Busca" />
+					<button type="submit" class="btn btn-primary btn-sm">Busca</button>
+				</div>
+			</div>
+			</li>
+				<li class="li">
+				<?php if (!isset($_SESSION['user'])) :?>
+					<a href="cadastro.php" class="a">
+						<span class="glyphicon glyphicon-user">	
+						</span>
+						Cadastrar
+					</a>
+				<?php endif ?>
+				</li>
+				<li class="li">
+				<?php if(isset($_SESSION['user'])) : ?>
+					<h3 id="a">
+						<?php echo "Olá, ". $_SESSION['user']; ?>
+					</h3>
+				<?php endif ?>
+				<?php if (!isset($_SESSION['user'])) :?>
+					<a href="login.php" class="a">
+						<span class="glyphicon glyphicon-log-in"></span> 
+							Entrar
+					</a>
+				<?php endif ?>
+				</li>
+				<li>
+				<?php if (isset($_SESSION['user'])) :?>
+					<a href="sair.php" class="a">
+						Sair<span class="glyphicon glyphicon-log-out" id="glyphicon"></span>
 
+					</a>
+				<?php endif ?>
 
-
+				</li>
+				<li class="li">
+				<a href="produtos.php" class="link-header a">
+					<span id= "	botao-produtos" class="glyphicon glyphicon-tags">	</span>
+					Produtos
+				</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+	
 
 </head>
-<body>
-	<script type="text/javascript" src="js/wz_tooltip.js"></script>
-	<?php session_start(); ?>
-
-	<header>
-		<nav>
-			<?php if(isset($_SESSION['user'])) : ?>
-				<span><?php echo "Olá, ". $_SESSION['user']; ?></span>
-			<?php endif ?>
-			<div id="logo">
-				<span>Móveis dos Sonhos</span>
-			</div>
-			<?php if (!isset($_SESSION['user'])) :?>
-				<div class="options">
-					<a href="cadastro.php" class="link-header" ><span  onmouseover="tip(Cadastre-se)" id="botao-cadastro" class="glyphicon glyphicon-log-in"></span></a>
-				</div>
-			<?php endif ?>
-			<div class="options">
-				<a href="produtos.php" class="link-header"><span id= "botao-produtos" class="glyphicon glyphicon-tags"></span></a>
-			</div>
-		</nav>
-		
-	</header>
-	<section>

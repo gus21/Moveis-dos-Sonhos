@@ -1,6 +1,6 @@
-</section>
+ <link rel="stylesheet" type="text/css" href="css/footer.css">
 
-<footer>
+<footer id="footer">
 <div class="row text-center text-xs-center text-sm-left text-md-left">
 	<center>
 		<h3>Conheça-nos!</h3>
