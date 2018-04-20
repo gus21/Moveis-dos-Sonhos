@@ -16,7 +16,7 @@ function cadastrar($a,$b,$c,$d)
 	$data_str=implode('', $data);
 	file_put_contents($file_user, $data_str);
 
-	header('location:Produtosmostrar.php');
+	header('location:produtosMostrar.php');
 }
 
 cadastrar($produto,$descricao,$preco,$estoque);

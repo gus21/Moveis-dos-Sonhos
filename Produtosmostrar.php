@@ -13,7 +13,7 @@
 				$csv[] = array_combine($header, $row);
 		}
 		foreach($csv as $line) {
-			echo $line['NOME'].' | '.$line['DESCRICAO'].' | '.$line['PRECO'].' | '.$line['ESTOQUE'].'|'.'<br/>';
+			echo $line['NOME'].' | '.$line['DESCRICAO'].' | '.$line['PRECO'].' | '.$line['ESTOQUE'].'<br/>';
 		}
 
 ?>

@@ -11,24 +11,28 @@
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/	bootstrap.min.js"></script>
 	<div class="menu">
     <div class="container-fluid">
+    	<div>
+    		<ul class="nav navbar-nav navbar-left">
+				<li class="li">
+					<a href="index.php" class=" glyphicon glyphicon-home btn btn-primary btn-circle btn-lg" >
+					</a>
+				</li>
+				<li class="li">
+				 <h4>Moveis Dos Sonhos</h4>
+				</li>
+				<li class="li">
+					
+					<div class="search">
+						<input type="text" class="form-control input-sm" maxlength="64" placeholder="Busca" />
+						<button type="submit" class="btn btn-primary btn-sm">Busca</button>
+					</div>
+				
+				</li> 
+    			
+    		</ul>
+    	</div>
    		<div>
 			<ul class="nav navbar-nav navbar-right">
-			<li class="li">
-				<a href="index.php" class=" glyphicon glyphicon-home btn btn-primary btn-circle btn-lg" >
-				</a>
-			</li>
-			<li class="li">
-			 <h4>Moveis Dos Sonhos</h4>
-			</li>
-			<li class="li">
-				<div class="container">
-				<div class="search">
-					<input type="text" class="form-control input-sm" maxlength="64" placeholder="Busca" />
-					<button type="submit" class="btn btn-primary btn-sm">Busca</button>
-					<button type="submit"><a href="produtosForm.php">C.produtos</button></a>
-				</div>
-			</div>
-			</li>
 				<li class="li">
 				<?php if (!isset($_SESSION['user'])) :?>
 					<a href="cadastro.php" class="a">
@@ -51,7 +55,7 @@
 					</a>
 				<?php endif ?>
 				</li>
-				<li>
+				<li class="li">
 				<?php if (isset($_SESSION['user'])) :?>
 					<a href="sair.php" class="a">
 						Sair<span class="glyphicon glyphicon-log-out" id="glyphicon"></span>
@@ -62,9 +66,17 @@
 				</li>
 				<li class="li">
 				<a href="produtos.php" class="link-header a">
-					<span id= "	botao-produtos" class="glyphicon glyphicon-tags">	</span>
+					<span class="glyphicon glyphicon-tags" id= "botao-produtos" >	</span>
 					Produtos
 				</a>
+				</li>
+				<li class="li">
+					<?php if (isset($_SESSION['user'])) :?>
+						<a href="produtosForm.php" class="a">
+						<span class="glyphicon glyphicon-list" id="glyphicon"></span>
+							Cadastrar Produtos
+						</a>
+					<?php endif ?>
 				</li>
 			</ul>
 		</div>
