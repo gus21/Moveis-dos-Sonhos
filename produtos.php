@@ -10,7 +10,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico&subset=latin-ext,vietnamese" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/produtos.css">
+	<link rel="stylesheet" href="css/projetoCss.css">
 		
 	<title>Produtos</title>
 </head>
@@ -18,8 +18,13 @@
 	<?php
 		include 'cabecario.php';
 	?>
+
+  <?php
+  $produtos = array("mesa-centro.jpg", "$300,00");
+  
+  ?>
 		
-<div class="container">
+/*<div class="container">
 	<div class="row">
 	   <div class="col-md-3 col-sm-6">
     		<span class="thumbnail">
@@ -158,8 +163,7 @@
   		</div> 
     </div>
 </div>
-
-    <?php include 'rodape.php'; ?>  
- 		
 </body>
 </html>
+    <?php include 'rodape.php'; ?>  
+ 		

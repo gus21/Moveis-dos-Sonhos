@@ -25,6 +25,7 @@
 				<div class="search">
 					<input type="text" class="form-control input-sm" maxlength="64" placeholder="Busca" />
 					<button type="submit" class="btn btn-primary btn-sm">Busca</button>
+					<button type="submit"><a href="produtosForm.php">C.produtos</button></a>
 				</div>
 			</div>
 			</li>
