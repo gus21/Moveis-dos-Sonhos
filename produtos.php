@@ -96,7 +96,7 @@
 
   		<div class="col-md-3 col-sm-6">
     		<span class="thumbnail">
-      			<img src="img/produtos/sofa2.png" alt="...">
+      			<img src="img/produtos/sofa2.jpg" alt="...">
       			<h4>SOFÁ</h4>
       			<p></p>
       			
@@ -113,7 +113,7 @@
 
   		<div class="col-md-3 col-sm-6">
     		<span class="thumbnail">
-      			<img src="img/produtos/cadeira-executiva2.png" alt="...">
+      			<img src="img/produtos/cadeira-executiva2.jpg" alt="...">
       			<h4>CADEIRA EXECUTIVA</h4>
       			<p></p>
       			
@@ -130,7 +130,7 @@
 
   		<div class="col-md-3 col-sm-6">
     		<span class="thumbnail">
-      			<img src="img/produtos/poltrona-executiva.png" alt="...">
+      			<img src="img/produtos/poltrona-executiva.jpg" alt="...">
       			<h4>POLTRONA EXECUTIVA</h4>
       			<p></p>
       			
@@ -147,7 +147,7 @@
 
   		<div class="col-md-3 col-sm-6">
     		<span class="thumbnail">
-      			<img src="img/produtos/mesa-madeira-p-2.png" alt="...">
+      			<img src="img/produtos/mesa-madeira-p-2.jpg" alt="...">
       			<h4>MESA DE MADEIRA</h4>
       			<p></p>
       			
