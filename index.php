@@ -10,6 +10,10 @@
 	
 	include 'cabecario.php';
 	?>
+	<?php
+
+	include 'carrosel.php';
+	?>
 
 	<?php 
 	
