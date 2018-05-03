@@ -30,10 +30,12 @@
 							<input type="text" class="form-control" id="lg_price" name="preco" placeholder="Preço" required>
 						</div>
 						<div class="form-group">
-							<input type="number" class="form-control" id="lg_password" name="estoque" placeholder="Estoque" required>
+							<input type="file" class="form-control" id="imgInp" required>
+							<input type="text" class="form-control" readonly>
+							<img id='img-upload'/>
 						</div>
 						<div>
-							<div class="col-md-6">
+							<!-- <div class="col-md-6">
 								<div class="form-group">
 									<span class="input-group-btn">
 										<span class="btn btn-default btn-file">
@@ -43,7 +45,7 @@
 									<input type="text" class="form-control" readonly>
 								</div>
 								<img id='img-upload'/>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>

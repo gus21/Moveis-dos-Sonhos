@@ -7,15 +7,15 @@ section .section-title {
     text-align: center;
     color: #09ACDB;
     margin-bottom: 50px;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;  
 }
 footer {
     background: #09ACDB !important;
-    position: absolute;
     bottom: 0 !important;
+    position: absolute !important;
+    
     width: 100% !important;
-    height: 150px;
+    height: 130px;
 }
 footer h5{
     padding-left: 10px;
@@ -75,5 +75,5 @@ footer ul.quick-links li:hover a i {
 } 
 .row{
     margin:0;
-    paddin:0;
+    padding:0;
 }

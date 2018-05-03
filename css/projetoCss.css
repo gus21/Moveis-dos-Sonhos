@@ -41,12 +41,6 @@ color: red;
 #glyphicon{
    font-size: 1em;
     padding-top: 15px;
-
-}
-#rodape{
-  position: relative;
-  background-color: #09ACDB;
-  top: 900px; 
 }
 .etc-login-form {
   color: #919191;
@@ -349,7 +343,6 @@ label:hover:before {
         border-radius: 25px;
       }
 
-#botao-produtos{
-  margin-top: 14px;
-  margin-left: 0;
+.a{
+ height: 100%;
 }

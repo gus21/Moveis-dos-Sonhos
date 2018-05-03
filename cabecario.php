@@ -9,6 +9,8 @@
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/	bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="css/produtos.css">
+</head>
 
 	<div class="menu">
     <div class="container-fluid">
@@ -36,7 +38,7 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="li">
 				<?php if (!isset($_SESSION['user'])) :?>
-					<a href="cadastro.php" class="a">
+					<a href="cadastro.php" class="a" style="padding-top: 22px;">
 						<span class="glyphicon glyphicon-user">	
 						</span>
 						Cadastrar
@@ -50,7 +52,7 @@
 					</h3>
 				<?php endif ?>
 				<?php if (!isset($_SESSION['user'])) :?>
-					<a href="login.php" class="a">
+					<a href="login.php" class="a" style="padding-top: 22px;">
 						<span class="glyphicon glyphicon-log-in"></span> 
 							Entrar
 					</a>

@@ -73,13 +73,8 @@
 		background-color: #ff6600;
 		color: #ff6600;
 	}
-	img{
-	width: 10%;
-
-	}
 	#centro{
 		position: relative;
-		top:30px;
 		font-size: 17px;
 	}
 
@@ -88,8 +83,7 @@
 		color: #000;
 		display: block;
 		position: relative;
-		top:35px;
-		height: 220px;
+		height: 150px;
 		width: 240px;
 		padding: 0.5em;
 		-moz-box-shadow: 5px 5px 7px #212121;
@@ -98,7 +92,7 @@
 		-moz-transition: -moz-transform 0.15s linear;
 		-o-transition: -o-transform 0.15s linear;
 		-webkit-transition: -webkit-transform 0.15s linear;
-		font-size:17px;
+		font-size:14px;
 	}
 
 
@@ -131,8 +125,8 @@
 				<li>
 					<div class="rotate-1 yellow-bg">
 						<h3>Gustavo Dantas</h3>
-						<p id="centro"> E-mail: gustavodantas@gmail.com </p>
-						<p id="centro"> WhatsAPP: 9 8210-5039</p>
+						<p id="centro"> E-mail: dz6.gustav@gmail.com </p>
+						<p id="centro"> WhatsAPP: 9 8105-6749</p>
 					</div>
 
 				</li>  
