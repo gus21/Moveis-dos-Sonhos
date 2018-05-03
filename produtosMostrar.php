@@ -1,5 +1,4 @@
-<html>
-<body>
+
 <?php 
 		
 		include 'cabecario.php';
@@ -21,6 +20,3 @@
 		
 		include 'rodape.php';
 		?>
-
-</body>
-</html>
