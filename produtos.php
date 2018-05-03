@@ -13,6 +13,14 @@ foreach($rows as $row) {
   <?php foreach ($csv as $line) : ?>
     <div class="produto">
       <?php echo "<img class=\"img\" src=\"".$line['IMG']."\">"; ?>
+       <center>
+       	<span class="detalhes-produto" id= "desc-pro-nome"> <?php echo $line['NOME'] ?> </span>
+       </center>
+      <!-- <span class="detalhes-produto" id= "desc-pro-descricao"> <?php /*echo $line['DESCRICAO']*/ ?> </span> -->
+      <center>
+      	<span class="detalhes-produto" id= "desc-pro-preco"> <?php echo "R$".$line['PRECO'] ?> </span>
+      </center>
+      <!-- <span class="detalhes-produto" id= "desc-pro-estoque"> <?php /*echo $line['ESTOQUE']*/ ?> </span> -->
     </div>
   <?php endforeach?> 
 </div>

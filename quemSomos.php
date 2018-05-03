@@ -110,7 +110,7 @@
 			<ul class="notes">
 				<li>
 					<div class="rotate-1 lazur-bg">
-						<h3>Abrão Henrique</h3>
+						<h3>Abraão Henrique</h3>
 						<p id="centro">E-mail: abraaotsurugi@gmail.com</p>
 						<p id="centro">WhatsAPP: 9 8353-4766</p>
 					</div>
