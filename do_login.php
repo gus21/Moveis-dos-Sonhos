@@ -22,7 +22,7 @@ function autenticar ($a, $b){
  	for ($i=0; $i <sizeof($csv) ; $i++) { 
  		$use_aut=array_search($a, $csv[$i]);
  		$pw_aut=array_search($b, $csv[$i]);
- 		if ($use_aut || $pw_aut) {
+ 		if ($use_aut && $pw_aut) {
  			$aut=true;
  		}
  	}
@@ -31,6 +31,7 @@ function autenticar ($a, $b){
 	 	$_SESSION['user']=$a;
 	 	header("location:index.php");
 	 }else{
+	 	$_SESSION['error']=1;
 	 	header("location:login.php");
 	 }
 }

@@ -20,10 +20,17 @@
 	include 'cabecario.php';
 	?>
 
+	
+	
+
 <!-- Where all the magic happens -->
 <!-- LOGIN FORM -->
 <div class="text-center" style="padding:50px 0">
 	<div class="logo"><em>Login</em></div>
+	<?php if($_SESSION['error']==1):?>
+		<center><span class="error-login"> Usuário ou senha Incorretos </span></center> 
+		<?php unset($_SESSION['error']); ?>
+	<?php  endif;?>
 	<!-- Main Form -->
 	<div class="login-form-1">
 		<form action="do_login.php" id="login-form" class="text-left" method="POST">
