@@ -7,8 +7,8 @@ margin:50px; ;
 }
 .produto{
 	float: left;
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	margin-left: 10px;
 	border: 1px solid #00c4ff ;
 	border-radius: 0px ;
@@ -20,3 +20,11 @@ margin:50px; ;
 #botao-produtos{
 	padding-top: 14px;
 }
+
+img{
+
+	width: 200px;
+	height: 200px;
+
+}
+
