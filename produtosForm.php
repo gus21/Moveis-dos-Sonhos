@@ -16,7 +16,7 @@
 		<div class="logo"><em>Cadastrar</em></div>
 		<!-- Main Form -->
 		<div class="login-form-1">
-			<form action="produtoCadastrar.php" id="login-form" class="text-left" method="POST">
+			<form action="produtoCadastrar.php" id="login-form" class="text-left" method="POST" enctype="multipart/form-data">
 				<div class="login-form-main-message"></div>
 				<div class="main-login-form">
 					<div class="login-group">
@@ -30,7 +30,10 @@
 							<input type="text" class="form-control" id="lg_price" name="preco" placeholder="Preço" required>
 						</div>
 						<div class="form-group">
-							<input type="file" class="form-control" id="imgInp" required>
+							<input type="number" class="form-control" id="lg_price" name="estoque" placeholder="estoque" required>
+						</div>
+						<div class="form-group">
+							<input type="file" class="form-control" id="imgInp" required name="arquivo">
 							<input type="text" class="form-control" readonly>
 							<img id='img-upload'/>
 						</div>

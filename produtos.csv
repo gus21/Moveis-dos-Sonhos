@@ -1,6 +1,4 @@
-NOME,DESCRICAO,PRECO,ESTOQUE
-sofa,mesa,1,10,1
-mesa,2,10,2
-a,a,1,1
-batata,a,aaa,
-adasd,asd,asdasd,
+NOME,DESCRICAO,PRECO,ESTOQUE,IMG
+cadeira de balanço,Cadeira de balanço muito confortavel,600,2,img/produtos/d25006d042a0be8dbcdf60a28ca2c764.jpg
+Mesa Centro,mesa de centro muito elegante,1.000,2,img/produtos/567d8f711fb2d969ab898f318c4a52cf.jpg
+Mesa xadrez,mesa para jogar xadrez,800,1,img/produtos/d75b46b32a6d102591dd446a8cc537d9.jpg

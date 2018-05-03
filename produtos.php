@@ -12,7 +12,7 @@ foreach($rows as $row) {
 <div class="container">   
   <?php foreach ($csv as $line) : ?>
     <div class="produto">
-      <?php echo $line['NOME']; ?>
+      <?php echo "<img src=\"".$line['IMG']."\">"; ?>
     </div>
   <?php endforeach?> 
 </div>
