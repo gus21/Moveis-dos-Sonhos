@@ -58,8 +58,8 @@
 				</li>
 				<li class="li">
 				<?php if (isset($_SESSION['user'])) :?>
-					<a href="sair.php" class="a">
-						Sair<span class="glyphicon glyphicon-log-out" id="glyphicon"></span>
+					<a href="sair.php" class="a" style="padding-top: 24px;">
+						Sair &nbsp;<span class="glyphicon glyphicon-log-out" id="botao-sair"></span>
 
 					</a>
 				<?php endif ?>
