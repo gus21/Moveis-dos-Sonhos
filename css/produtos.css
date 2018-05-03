@@ -1,4 +1,4 @@
-/*  h4{
+  h4{
 	font-weight: 600;
 }
 p{
@@ -55,4 +55,9 @@ button {    margin-top: 6px;
 	font-size:13px;
 	font-weight:600;
 
-}  */
+}  
+
+.produto{
+
+	float: left;
+}
