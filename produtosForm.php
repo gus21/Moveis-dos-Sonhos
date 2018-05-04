@@ -5,7 +5,7 @@
 	<link rel="stylesheet" href="css/projetoCss.css">
 	<link rel="stylesheet" type="text/css" href="css/produtosForm.css">
 </head>
-<body>
+<body id="loginBackground">
 	<?php
 	include 'cabecario.php';
 	?>
