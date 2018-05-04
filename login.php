@@ -27,11 +27,11 @@
 <!-- LOGIN FORM -->
 <div class="text-center" style="padding:50px 0">
 	<div class="logo"><em>Login</em></div>
-	<?php if($_SESSION['error']==1):?>
+	<?php if(isset($_SESSION['error'])):?>
 		<center><span class="error-login"> Usuário ou senha Incorretos </span></center> 
 		<?php unset($_SESSION['error']); ?>
 	<?php  endif;?>
-	<?php if($_SESSION['sucess-cadastro']==1):?>
+	<?php if(isset($_SESSION['sucess-cadastro'])):?>
 		<center><span class="sucess-cadastro"> Cadastro Realizado com Sucesso </span></center> 
 		<?php unset($_SESSION['sucess-cadastro']); ?>
 	<?php  endif;?>

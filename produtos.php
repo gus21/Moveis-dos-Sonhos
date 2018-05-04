@@ -10,7 +10,7 @@ foreach($rows as $row) {
 }
 ?>
 <div class="container">  
-	<?php if($_SESSION['sucess-produto']==1):?>
+	<?php if(isset($_SESSION['sucess-produto'])):?>
 		<center><span class="sucess-produto"> Produto Cadastrado com Sucesso </span></center> 
 		<?php unset($_SESSION['sucess-produto']); ?>
 	<?php  endif;?>
