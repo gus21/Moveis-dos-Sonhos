@@ -349,3 +349,9 @@ label:hover:before {
 .error-login{
   color: red;
 }
+.sucess-cadastro{
+  color: green;
+}
+.sucess-produto{
+  color: green;
+}

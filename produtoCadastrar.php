@@ -32,6 +32,7 @@ function cadastrar($a,$b,$c,$d,$e)
 	array_push($data, $nome_user);
 	$data_str=implode('', $data);
 	file_put_contents($file_user, $data_str);
+	$_SESSION['sucess-produto']=1;
 	header('location:produtos.php');
 }
 }

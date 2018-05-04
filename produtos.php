@@ -9,7 +9,11 @@ foreach($rows as $row) {
   $csv[] = array_combine($header, $row);
 }
 ?>
-<div class="container">   
+<div class="container">  
+	<?php if($_SESSION['sucess-produto']==1):?>
+		<center><span class="sucess-produto"> Produto Cadastrado com Sucesso </span></center> 
+		<?php unset($_SESSION['sucess-produto']); ?>
+	<?php  endif;?>
   <?php foreach ($csv as $line) : ?>
     <div class="produto">
       <?php echo "<img class=\"img\" src=\"".$line['IMG']."\">"; ?>

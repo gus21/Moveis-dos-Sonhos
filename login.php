@@ -31,6 +31,10 @@
 		<center><span class="error-login"> Usuário ou senha Incorretos </span></center> 
 		<?php unset($_SESSION['error']); ?>
 	<?php  endif;?>
+	<?php if($_SESSION['sucess-cadastro']==1):?>
+		<center><span class="sucess-cadastro"> Cadastro Realizado com Sucesso </span></center> 
+		<?php unset($_SESSION['sucess-cadastro']); ?>
+	<?php  endif;?>
 	<!-- Main Form -->
 	<div class="login-form-1">
 		<form action="do_login.php" id="login-form" class="text-left" method="POST">

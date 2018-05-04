@@ -38,8 +38,8 @@ function cadastrar($a,$b,$c)
 	array_push($data, $nome_user);
 	$data_str=implode('', $data);
 	file_put_contents($file_user, $data_str);
-
-	header('location:index.php');
+	$_SESSION['sucess-cadastro']=1;
+	header('location:login.php');
 }
 
 

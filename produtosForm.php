@@ -12,7 +12,7 @@
 
 	<!-- Where all the magic happens -->
 	<!-- LOGIN FORM -->
-	<div class="text-center" style="padding:50px 0">
+	<div class="text-center">
 		<div class="logo"><em>Cadastrar</em></div>
 		<!-- Main Form -->
 		<div class="login-form-1">
