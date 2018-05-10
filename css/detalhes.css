@@ -235,7 +235,7 @@
 }
 .panel-default {
   border-color: #ddd;
-  border-left-color:purple;
+  border-left-color:#09ACDB;
   border-left-style: groove;
   border-left-width: 10px;
 }
@@ -1432,7 +1432,7 @@ a.urunthumbnail.active {
 .tab-content {
   overflow: hidden; }
 .tab-content img {
-  width: 80%;
+  width: 75%;
   -webkit-animation-name: opacity;
   animation-name: opacity;
   -webkit-animation-duration: .3s;
