@@ -54,4 +54,6 @@ foreach ($file_produtos as $key) {
     </div>
 </div>
 
+
 <?php include 'rodape.php'; ?>
+

@@ -1432,14 +1432,14 @@ a.urunthumbnail.active {
 .tab-content {
   overflow: hidden; }
 .tab-content img {
-  width: 100%;
+  width: 80%;
   -webkit-animation-name: opacity;
   animation-name: opacity;
   -webkit-animation-duration: .3s;
   animation-duration: .3s; }
 
 .card {
-  margin-top: 50px;
+  margin-top: -35px;
   background: #eee;
   padding: 3em;
   line-height: 1.5em; }
