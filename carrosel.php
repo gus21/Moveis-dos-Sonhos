@@ -26,19 +26,19 @@
                     
                 <div class="item active">
                 	<div class="row">
-                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="img/produtos/cadeira-de-balanço.jpg" alt="Image" style="max-width:100%;"></a></div>
-                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="img/produtos/mesa-centro.jpg" alt="Image" style="max-width:100%;"></a></div>
-                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="img/produtos/mesa-xadrez.jpg" alt="Image" style="max-width:100%;"></a></div>
-                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="img/produtos/mesa-jantar-marmore.jpg" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="img/img_carrossel/cadeira-de-balanço.jpg" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="img/img_carrossel/mesa-centro.jpg" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="img/img_carrossel/mesa-xadrez.jpg" alt="Image" style="max-width:100%;"></a></div>
+                	  <div class="col-md-3"><a href="#" class="thumbnail"><img src="img/img_carrossel/mesa-jantar-marmore.jpg" alt="Image" style="max-width:100%;"></a></div>
                 	</div><!--.row-->
                 </div><!--.item-->
                  
                 <div class="item">
                 	<div class="row">
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="img/produtos/mesa-centro.jpg" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="img/produtos/mesa-jantar-marmore.jpg" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="img/produtos/mesa-xadrez.jpg" alt="Image" style="max-width:100%;"></a></div>
-                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="img/produtos/cadeira-de-balanço.jpg" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="img/img_carrossel/mesa-centro.jpg" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="img/img_carrossel/mesa-jantar-marmore.jpg" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="img/img_carrossel/mesa-xadrez.jpg" alt="Image" style="max-width:100%;"></a></div>
+                		<div class="col-md-3"><a href="#" class="thumbnail"><img src="img/img_carrossel/cadeira-de-balanço.jpg" alt="Image" style="max-width:100%;"></a></div>
                 	</div><!--.row-->
                 </div><!--.item-->
                  

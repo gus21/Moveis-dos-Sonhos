@@ -38,6 +38,11 @@
 	<!-- Main Form -->
 	<div class="login-form-1">
 		<form action="do_login.php" id="login-form" class="text-left" method="POST">
+			<!--Gambiarra pra não auto_preencher os campos do form-->
+				<input type="text" name="usuario" style="display:none">
+				<input type="password"  name="senha" style="display:none">
+			<!-- fim da Gambiarra-->
+
 			<div class="login-form-main-message"></div>
 			<div class="main-login-form">
 				<div class="login-group">
