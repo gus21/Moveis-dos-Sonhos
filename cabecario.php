@@ -9,7 +9,8 @@
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/	bootstrap.min.js"></script>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-	<link rel="stylesheet" href="css/produtos.css">
+	<link rel="stylesheet" type="text/css" href="css/detalhes.css">
+	<link rel="stylesheet" type="text/css" href="css/produtos.css">
 </head>
 
 	<div class="menu">
