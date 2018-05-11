@@ -326,6 +326,10 @@ label:hover:before {
             width: 200px;
             margin-left: 0px;
 }
+.button {
+  padding: 7px;
+  border-radius: 4px;
+}
 .btn {
     height: 30px;
     position: absolute;

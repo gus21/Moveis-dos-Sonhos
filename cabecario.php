@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php
+session_start();
+require_once 'conexao.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,9 +51,9 @@
 				</li>
 				<li class="li">
 				<?php if(isset($_SESSION['user'])) : ?>
-					<h3 id="a">
-						<?php echo "Olá, ". $_SESSION['user']; ?>
-					</h3>
+					<a href="user.php" class="a" style="padding-top: 22px;">
+						Olá, <?= $_SESSION['user'] ?>
+					</a>
 				<?php endif ?>
 				<?php if (!isset($_SESSION['user'])) :?>
 					<a href="login.php" class="a" style="padding-top: 22px;">

@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<link rel="stylesheet" type="text/css" href="css/projetoCss.css">
-</head>
-
-<body id="indexBackground">
-	
-	<?php 
+<?php 
 	
 	include 'cabecario.php';
 	?>
+<body id="indexBackground">
 	<?php
 
 	include 'carrosel.php';
