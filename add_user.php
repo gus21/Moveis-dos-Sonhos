@@ -16,9 +16,8 @@ $result = $stmt->execute();
 if (!$result) {
 	var_dump($stmt->errorInfo());
 	exit;
+}else{
+	$_SESSION['sucess-cadastro']=1;
+	header('location: login.php');
 }
 ?>
-<div class="text-center" style="padding:50px 0">
-	<div class="logo"><em><?= $_SESSION['user'] ?></em></div>
-	<span>User added successfully!</span>
-</div>

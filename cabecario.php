@@ -51,14 +51,15 @@ require_once 'conexao.php';
 				</li>
 				<li class="li">
 				<?php if(isset($_SESSION['user'])) : ?>
-					<a href="user.php" class="a" style="padding-top: 22px;">
-						Olá, <?= $_SESSION['user'] ?>
+					<a href="user.php" class="a" style="padding-top: 23px;">
+					<span class="glyphicon glyphicon-user" id="botao-editar">&nbsp;<?= $_SESSION['user'] ?></span>
+					</a>
 					</a>
 				<?php endif ?>
 				<?php if (!isset($_SESSION['user'])) :?>
 					<a href="login.php" class="a" style="padding-top: 22px;">
 						<span class="glyphicon glyphicon-log-in"></span> 
-							Entrar
+							Entrar 
 					</a>
 				<?php endif ?>
 				</li>
@@ -66,7 +67,6 @@ require_once 'conexao.php';
 				<?php if (isset($_SESSION['user'])) :?>
 					<a href="sair.php" class="a" style="padding-top: 24px;">
 						Sair &nbsp;<span class="glyphicon glyphicon-log-out" id="botao-sair"></span>
-
 					</a>
 				<?php endif ?>
 
