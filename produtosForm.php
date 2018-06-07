@@ -7,7 +7,7 @@
 </head>
 <body id="loginBackground">
 	<?php
-	include 'cabecario.php';
+		include 'cabecario.php';
 	?>
 
 	<!-- Where all the magic happens -->
@@ -37,8 +37,8 @@
 							<input type="text" class="form-control" readonly>
 							<img id='img-upload'/>
 						</div>
-						<div>
-							<!-- <div class="col-md-6">
+						<!--<div>
+							<! <div class="col-md-6">
 								<div class="form-group">
 									<span class="input-group-btn">
 										<span class="btn btn-default btn-file">
@@ -48,8 +48,8 @@
 									<input type="text" class="form-control" readonly>
 								</div>
 								<img id='img-upload'/>
-							</div> -->
-						</div>
+							</div> 
+						</div>-->
 					</div>
 					<button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
 				</div>
@@ -57,46 +57,46 @@
 		</div>
 		<!-- end:Main Form -->
 	</div>
-</div>
+	
 <?php 
-
-include 'rodape.php';
+	include 'rodape.php';
 ?>	
-<script type="text/javascript" >
-	$(document).ready( function() {
-		$(document).on('change', '.btn-file :file', function() {
-			var input = $(this),
-			label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-			input.trigger('fileselect', [label]);
-		});
+	<script type="text/javascript" >
+		$(document).ready( function() {
+			$(document).on('change', '.btn-file :file', function() {
+				var input = $(this),
+				label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+				input.trigger('fileselect', [label]);
+			});
 
-		$('.btn-file :file').on('fileselect', function(event, label) {
+			$('.btn-file :file').on('fileselect', function(event, label) {
 
-			var input = $(this).parents('.input-group').find(':text'),
-			log = label;
+				var input = $(this).parents('.input-group').find(':text'),
+				log = label;
 
-			if( input.length ) {
-				input.val(log);
-			} else {
-				if( log ) alert(log);
-			}
-
-		});
-		function readURL(input) {
-			if (input.files && input.files[0]) {
-				var reader = new FileReader();
-
-				reader.onload = function (e) {
-					$('#img-upload').attr('src', e.target.result);
+				if( input.length ) {
+					input.val(log);
+				} else {
+					if( log ) alert(log);
 				}
 
-				reader.readAsDataURL(input.files[0]);
-			}
-		}
+			});
+			function readURL(input) {
+				if (input.files && input.files[0]) {
+					var reader = new FileReader();
 
-		$("#imgInp").change(function(){
-			readURL(this);
-		}); 	
-	});</script>
+					reader.onload = function (e) {
+						$('#img-upload').attr('src', e.target.result);
+					}
+
+					reader.readAsDataURL(input.files[0]);
+				}
+			}
+
+			$("#imgInp").change(function(){
+				readURL(this);
+			}); 	
+		});
+	</script>
 </body>
 </html>

@@ -1,32 +1,33 @@
 <?php
-include 'cabecario.php';
+	include 'cabecario.php';
 ?>
+
 <body id="loginBackground">
 
 	<!-- Where all the magic happens -->
 	<!-- LOGIN FORM -->
 	<div class="text-center" style="padding:50px 0">
 		<div class="logo"><em>Login</em></div>
-		<?php if(isset($_SESSION['error'])):?>
+			<?php if(isset($_SESSION['error'])):?>
 			<center><span class="error-login"> Usuário ou senha Incorretos </span></center> 
 			<?php unset($_SESSION['error']); ?>
-		<?php  endif;?>
-		<?php if(isset($_SESSION['sucess-cadastro'])):?>
+			<?php  endif;?>
+			<?php if(isset($_SESSION['sucess-cadastro'])):?>
 			<center><span class="sucess-cadastro"> Cadastro Realizado com Sucesso </span></center> 
 			<?php unset($_SESSION['sucess-cadastro']); ?>
-		<?php  endif;?>
-		<?php if (isset($_SESSION['deleted'])): ?>
+			<?php  endif;?>
+			<?php if (isset($_SESSION['deleted'])): ?>
 			<center><span class="sucess-cadastro"> Usuário removido com sucesso </span></center> 
-		<?php
-		unset($_SESSION['deleted']);
-		endif
-		?>
-		<?php if (isset($_SESSION['error_delete'])): ?>
+			<?php
+			unset($_SESSION['deleted']);
+			endif
+			?>
+			<?php if (isset($_SESSION['error_delete'])): ?>
 			<center><span class="error-login"> Erro ao tentar deletar usuário. </span></center> 
-		<?php
-		unset($_SESSION['error_delete']);
-		endif
-		?>
+			<?php
+			unset($_SESSION['error_delete']);
+			endif
+			?>
 		<!-- Main Form -->
 		<div class="login-form-1">
 			<form action="do_login.php" id="login-form" class="text-left" method="POST">
@@ -52,13 +53,11 @@ include 'cabecario.php';
 			</form>
 		</div>
 		<!-- end:Main Form -->
+		</div>
 	</div>
-</div>
 
-<?php 
-
-include 'rodape.php';
-?>	
-
+	<?php 
+		include 'rodape.php';
+	?>	
 </body>
 </html>

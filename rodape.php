@@ -1,9 +1,9 @@
  <link rel="stylesheet" type="text/css" href="css/footer.css">
 
 <footer id="footer">
-<div class="row text-center text-xs-center text-sm-left text-md-left">
-	<h3>Conheça-nos!</h3>
-</div>
+	<div class="row text-center text-xs-center text-sm-left text-md-left">
+		<h3>Conheça-nos!</h3>
+	</div>
 	<center>
 		<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
 			<ul class="list-unstyled list-inline social text-center">

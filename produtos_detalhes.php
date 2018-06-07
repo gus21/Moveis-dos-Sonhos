@@ -1,5 +1,5 @@
-
 <?php include 'cabecario.php'; ?>
+
 <?php
 $l=$_GET['l'];
 $file_produtos=array_map('str_getcsv', file('produtos.csv'));
@@ -54,6 +54,4 @@ foreach ($file_produtos as $key) {
     </div>
 </div>
 
-
 <?php include 'rodape.php'; ?>
-

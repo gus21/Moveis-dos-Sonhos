@@ -6,8 +6,7 @@ $pw=$_POST['senha'];
 $email=$_POST['email'];
 
 //essa funçao verifica se o usuario ja existe
-function existente($a,$b)
-{	//abre o arquivo csv e executa varios comandos
+function existente($a,$b){	//abre o arquivo csv e executa varios comandos
 	$file_array=array_map('str_getcsv', file('usuario-senha.csv'));
 
  	$header = array_shift($file_array);
@@ -15,7 +14,7 @@ function existente($a,$b)
 
  	foreach ($file_array as $indeice) {
 
- 	$csv[]= array_combine($header, $indeice);
+ 		$csv[]= array_combine($header, $indeice);
  	}
  	$aut=false;
  	//nesse laço testa se o usuario existe
@@ -30,8 +29,7 @@ function existente($a,$b)
 	
 }
 //essa funçao cadastra o usuario caso ele nao exista
-function cadastrar($a,$b,$c)
-{	//abre o arquivo csv e escreve o nome do usuario a senha e o email
+function cadastrar($a,$b,$c){	//abre o arquivo csv e escreve o nome do usuario a senha e o email
 	$file_user='usuario-senha.csv';
 	$data = file($file_user);
 	$nome_user=$a.','.$b.','.$c."\n";
@@ -50,7 +48,5 @@ if ($aut == false) {
 }elseif($aut == true){
 	header('location:cadastro.php');
 }
-
-
 
 ?>

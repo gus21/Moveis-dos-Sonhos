@@ -89,6 +89,4 @@ require_once 'conexao.php';
 		</div>
 	</div>
 </div>
-	
-
-
+</html>
