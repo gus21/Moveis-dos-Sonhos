@@ -25,14 +25,14 @@ foreach ($file_produtos as $key) {
                 <div class="details col-md-6">
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-list-alt"></span>Nome</div>
+                        	<div class="panel-title"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Nome</div>
                         </h3>
                         <hr>
                     <h4><?php echo strtoupper($dados[$l]['NOME']); ?></h4>
                     </div>
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-comment"></span>Descriçao</div>
+                        	<div class="panel-title"><span class="glyphicon glyphicon-comment"></span>&nbsp;Descriçao</div>
                         </h3>
                         <hr>
                         <h4>
@@ -41,7 +41,7 @@ foreach ($file_produtos as $key) {
                     </div>
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-credit-card"></span>Valor</div>
+                        	<div class="panel-title"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;Valor</div>
                         </h3>
                         <hr>
                         <h2>

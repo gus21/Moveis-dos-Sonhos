@@ -3,45 +3,54 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<div class="container"> 
-    <div class="row">
+<div class="container" >    <?php
+  $rows   = array_map('str_getcsv', file('produtos.csv'));
+  $header = array_shift($rows);
+  $csv    = array();
+  foreach($rows as $row) {
+    $csv[] = array_combine($header, $row);
+
+  }
+  ?>
+  <div class="row">
     <div id="myCarousel" class="carousel  slide">
-  
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-  </ol>
- 
- <center>
-  <div class="carousel-inner">
-    <div class="active item"> 
 
-         <img src="img/img_carrossel/promoções.png" >
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
 
-    </div>
+      <center>
+        <div class="carousel-inner">
+          <div class="active item" style="height: 455px !important;"> 
 
-    <div class="item">
-        <img src="img/img_carrossel/cadeira-de-balanço.jpg/" >
+           <img src="img/img_carrossel/promoções.png" >
+
+         </div>
+
+         <?php foreach ($csv as $line => $valores) : ?>
+
+          <div class="item" style="height: 455px !important;"> 
+            <a href="produtos_detalhes.php?l=<?=$line?>">
+             <?php echo "<img src=\"".$valores['IMG']."\">"; ?>
+           </a>
+         </div>
+
+
+       <?php endforeach?> 
      </div>
-
-    <div class="item">
-        <img src="img/img_carrossel/mesa-centro.jpg" >
-     </div>
-
-    <div class="item"> 
-        <img src="img/img_carrossel/mesa-jantar-marmore.jpg" >
-     </div>
-
-  </div>
-</center>
+   </center>
 
    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
 </div>
-    </div>
 </div>
+</div>
+
+
+
