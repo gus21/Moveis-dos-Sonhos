@@ -1,4 +1,4 @@
-CREATE DATABASE moveis_dos_sonhos;
+CREATE DATABASE id5161226_moveis_dos_sonhos;
 USE moveis_dos_sonhos;
 
 CREATE TABLE users (
@@ -16,6 +16,7 @@ mov_img VARCHAR(40) NOT NULL,
 mov_preco DECIMAL(6,2) NOT NULL,
 mov_estoque INT NOT NULL,
 mov_descricao text,
+mov_categoria VARCHAR(40) NOT NULL,
 mov_usr_id INT NOT NULL,
 CONSTRAINT pk_mov PRIMARY KEY (mov_id),
 CONSTRAINT fk_mov_usr FOREIGN KEY (mov_usr_id) REFERENCES users(usr_id)

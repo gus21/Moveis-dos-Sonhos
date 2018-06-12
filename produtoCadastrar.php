@@ -38,5 +38,5 @@ function cadastrar($a,$b,$c,$d,$e)
 }
 
 cadastrar($produto,$descricao,$preco,$estoque,$img);
-
+$sql = "INSERT INTO moveis (mov_nome, mov_img, mov_preco, mov_estoque, mov_descricao, mov_categoria) "
  ?>
