@@ -1,21 +1,20 @@
-<?php 
+<?php
+require_once 'conexao.php';
+
 session_start();
 
 $produto=$_POST['produto'];
 $descricao=$_POST['descricao'];
 $preco=$_POST['preco'];
 $estoque=$_POST['estoque'];
+$categoria=$_POST['categoria'];
 $img = $_FILES['arquivo']['name'];
 
-//cadastra produtos 
-function cadastrar($a,$b,$c,$d,$e)
-{
-	$file_user='produtos.csv';
-	$data = file($file_user);
+
 	
 	$arquivo_tmp = $_FILES['arquivo']['tmp_name'];
 
-	$extensao = strrchr($e, '.');
+	$extensao = strrchr($img, '.');
 	if(strstr('.jpg;.jpeg;.gif;.png', $extensao))
 	{
 		// Cria um nome único para esta imagem
@@ -28,15 +27,30 @@ function cadastrar($a,$b,$c,$d,$e)
 		// tenta mover o arquivo para o destino
 		@move_uploaded_file( $arquivo_tmp, $destino );
 	
-	$nome_user=$a.','.$b.','.$c.','.$d.','.$destino."\n";
-	array_push($data, $nome_user);
-	$data_str=implode('', $data);
-	file_put_contents($file_user, $data_str);
+}
+
+
+
+$sql = "INSERT INTO moveis (mov_nome, mov_img, mov_preco, mov_estoque, mov_descricao, mov_categoria) VALUES (:mov_nome, :mov_img, :mov_preco, :mov_estoque, :mov_descricao, :mov_categoria)";
+
+$stmt = $pdo->prepare( $sql );
+$stmt->bindParam( ':mov_nome', $nome );
+$stmt->bindParam( ':mov_img', $destino );
+$stmt->bindParam( ':mov_preco', $preco );
+$stmt->bindParam( ':mov_estoque', $estoque );
+$stmt->bindParam( ':mov_descricao', $descricao );
+$stmt->bindParam( ':mov_categoria', $categoria );
+
+
+
+
+$result = $stmt->execute();
+if (!$result) {
+	var_dump($stmt->errorInfo());
+	exit;
+}else{
 	$_SESSION['sucess-produto']=1;
 	header('location:produtos.php');
 }
-}
 
-cadastrar($produto,$descricao,$preco,$estoque,$img);
-$sql = "INSERT INTO moveis (mov_nome, mov_img, mov_preco, mov_estoque, mov_descricao, mov_categoria) "
  ?>

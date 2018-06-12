@@ -1,5 +1,5 @@
 <?php
-require_once 'cabecario.php';
+require_once 'conexao.php';
 
 $user  = $_POST['usuario'];
 $pw    = md5($_POST['senha']);
@@ -11,8 +11,8 @@ $stmt = $pdo->prepare( $sql );
 $stmt->bindParam( ':usr_email', $email );
 $stmt->bindParam( ':usr_nome', $user );
 $stmt->bindParam( ':usr_senha', $pw );
-
 $result = $stmt->execute();
+
 if (!$result) {
 	var_dump($stmt->errorInfo());
 	exit;

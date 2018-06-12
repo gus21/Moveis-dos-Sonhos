@@ -30,6 +30,9 @@
 							<input type="text" class="form-control" id="lg_price" name="preco" placeholder="Preço" required>
 						</div>
 						<div class="form-group">
+							<input type="text" class="form-control" id="lg_price" name="descricao" placeholder="Descriçao" required>
+						</div>
+						<div class="form-group">
 							<input type="number" class="form-control" id="lg_price" name="estoque" placeholder="estoque" required>
 						</div>
 						<div class="form-group">
