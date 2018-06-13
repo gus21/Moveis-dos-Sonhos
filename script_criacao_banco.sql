@@ -21,3 +21,5 @@ mov_usr_id INT NOT NULL,
 CONSTRAINT pk_mov PRIMARY KEY (mov_id),
 CONSTRAINT fk_mov_usr FOREIGN KEY (mov_usr_id) REFERENCES users(usr_id)
 );
+
+ALTER TABLE users ADD role VARCHAR(20);

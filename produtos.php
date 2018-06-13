@@ -8,6 +8,10 @@ $csv    = array();
 foreach($rows as $row) {
   $csv[] = array_combine($header, $row);
 }
+if(isset($_GET['busca'])){
+  $busca = $_GET['busca']; 
+  //echo $busca;
+}
 ?>
 <div class="container">  
 	<?php if(isset($_SESSION['sucess-produto'])):?>
