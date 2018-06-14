@@ -29,3 +29,7 @@ mov_usr_id INT NOT NULL,
 CONSTRAINT pk_mov PRIMARY KEY (mov_id),
 CONSTRAINT fk_mov_usr FOREIGN KEY (mov_usr_id) REFERENCES users(usr_id)
 );
+
+insert into usr_roles (rol_nome) values("admin");
+insert into usr_roles (rol_nome) values("vendedor");
+insert into usr_roles (rol_nome) values("cliente");

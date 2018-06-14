@@ -379,7 +379,7 @@ label:hover:before {
 }
 #users_table,#users_table td, #users_table th {    
   border: 1px solid #ddd;
-  text-align: left;
+  text-align: center;
 }
 #users_table th {
   font-size: 12px;
