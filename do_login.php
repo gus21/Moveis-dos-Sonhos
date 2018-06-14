@@ -41,11 +41,15 @@ $sql = "SELECT * FROM users WHERE usr_nome = '$user' AND usr_senha = '$pw'";
 $stmt = $pdo->prepare($sql);
 $result = $stmt->execute();
 $rows = $stmt->rowCount();
+
+var_dump($result);
+
 if ($rows > 0) {
 	$_SESSION['user'] = $user;
-	header("location:index.php");
+	//header("location:index.php");
+
 }else{
 	$_SESSION['error'] = 1;
-	header("location:login.php");
+	//header("location:login.php");
 }
 ?>
