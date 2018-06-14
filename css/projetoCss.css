@@ -1,46 +1,46 @@
 .menu
 {
-background-color: #09ACDB;
-border-bottom: 4px solid #4f5467;
-width:100%;
-height: auto;
-padding: 0 10px;
-position: relative;
-margin: 0px;
-z-index: 1;
+  background-color: #09ACDB;
+  border-bottom: 4px solid #4f5467;
+  width:100%;
+  height: auto;
+  padding: 0 10px;
+  position: relative;
+  margin: 0px;
+  z-index: 1;
 
 }
 .menu  .navbar-nav   .li   .a
 {
-font-size: 16px;
-color: black;
-padding: 10px 35px;
+  font-size: 16px;
+  color: black;
+  padding: 10px 35px;
 
 }
 .menu  .navbar-nav >  .li >  .a:hover
 {
-background-color: gray;
+  background-color: gray;
 }
 .navbar-header {
-    padding: 10px;
+  padding: 10px;
 }
 .navbar-header > .a {
-    font-family: 'Ubuntu Condensed', sans-serif;
-    padding: 0px;
-    margin: 0px;
-    text-decoration: none;
-    color: black;
-    font-size: 13px;
-    padding: 5px 3px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  padding: 5px 3px;
 }
 .navbar-header > .a:hover
 {
-text-decoration: none;
-color: red;
+  text-decoration: none;
+  color: red;
 }
 #glyphicon{
-   font-size: 1em;
-    padding-top: 15px;
+ font-size: 1em;
+ padding-top: 15px;
 }
 .etc-login-form {
   color: #919191;
@@ -299,53 +299,53 @@ label:hover:before {
   background-image: url(../img/index.jpg);
 }
 .search {
-    padding: 5px 0;
-    width: 230px;
-    height: 30px;
-    position: relative;
-    left: 10px;
-    float: right;
-    line-height: 22px;
+  padding: 5px 0;
+  width: 230px;
+  height: 30px;
+  position: relative;
+  left: 10px;
+  float: right;
+  line-height: 22px;
 }
 
 .search input {
-        position: relative;
-        width: 0px;
-        float: Left;
-        margin-left: 210px;
-        -webkit-transition: all 0.7s ease-in-out;
-        -moz-transition: all 0.7s ease-in-out;
-        -o-transition: all 0.7s ease-in-out;
-        transition: all 0.7s ease-in-out;
-        height: 30px;
-        line-height: 18px;
-        padding: 0 2px 0 2px;
-        border-radius:1px;
+  position: relative;
+  width: 0px;
+  float: Left;
+  margin-left: 210px;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+  height: 30px;
+  line-height: 18px;
+  padding: 0 2px 0 2px;
+  border-radius:1px;
 }
 .search:hover input, .search input:focus {
-            width: 200px;
-            margin-left: 0px;
+  width: 200px;
+  margin-left: 0px;
 }
 .button {
   padding: 7px;
   border-radius: 4px;
 }
 .btn {
-    height: 30px;
-    position: absolute;
-    right: 0;
-    top: 5px;
-    border-radius:1px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  border-radius:1px;
 }
 
 .btn-circle.btn-lg {
-        width: 50px;
-        height: 35px;
-        padding: 7px 10px;
-        font-size: 18px;
-        line-height: 1.33;
-        border-radius: 25px;
-      }
+  width: 50px;
+  height: 35px;
+  padding: 7px 10px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
 
 .a{
  height: 100%;
@@ -358,4 +358,36 @@ label:hover:before {
 }
 .sucess-produto{
   color: green;
+}
+#users_table {
+  border-collapse: collapse;
+  width: 70%;
+  text-align: center;
+  margin-top: 2%;
+}
+#users_table th, #users_table td {
+  padding: 6px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  line-height: 2px;
+  color:#818181;
+}
+#users_table th {
+  background-color:#337ab7;
+  color: white;
+  font-size:1em;
+}
+#users_table,#users_table td, #users_table th {    
+  border: 1px solid #ddd;
+  text-align: left;
+}
+#users_table th {
+  font-size: 12px;
+}
+#users_table td{
+  font-size: 14px;
+}
+
+#users_table tr td a{
+  margin-left: 3px;
 }
