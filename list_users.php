@@ -14,6 +14,7 @@ if($_SESSION['user-role']=='admin'){
     $stmt->execute();
 
     $result = $stmt->fetchAll();
+
     ?>
 
     <center>
@@ -28,24 +29,27 @@ if($_SESSION['user-role']=='admin'){
             <?php
             unset($_SESSION['deleted']);
         endif;?>
+
         <table id="users_table">
             <tr>
                 <th>Nome</th>
                 <th>Email </th>
                 <th>Ações</th>
-            </tr>  
-            <?php foreach($result[0] as $rows)?>
-            <td><?=$rows['usr_nome']?></td>
-            <td><?=$rows['usr_email']?></td>    
-            <td width="20%">
-                <center>
-                    <a href='delete_user.php?id=<?=$rows['usr_id']?>&flag=admin'><i class='fa fa-2x fa-trash sr-icons' title='Deletar Usuário'></i></a>
-                    <a href='edit_user.php?id=<?=$rows['usr_id']?>&flag=admin'><i class='fa fa-2x fa-pencil sr-icons' title='Editar Usuário'></i></a>
-                </center>
-            </td>
-        </tr>
-    </table> 
-</center>
+            </tr>
+            <?php foreach($result as $rows):?>
+                <tr>
+                    <td><?=$rows[2]?></td>
+                    <td><?=$rows[1]?></td>    
+                    <td width="20%">
+                        <center>
+                            <a href='delete_user.php?id=<?=$rows['usr_id']?>&flag=admin'><i class='fa fa-2x fa-trash sr-icons' title='Deletar Usuário'></i></a>&nbsp;&nbsp;
+                            <a href='edit_user.php?id=<?=$rows['usr_id']?>&flag=admin'><i class='fa fa-2x fa-pencil sr-icons' title='Editar Usuário'></i></a>
+                        </center>
+                    </td>
+                </tr>
+            <?php endforeach;?>
+        </table> 
+    </center>
 <?php }else{
     echo "<center><br><br><br><h1>É NECESSÁRIO PERMISSÃO DE ADMININSTRADOR</h1></center>";
 } ?>

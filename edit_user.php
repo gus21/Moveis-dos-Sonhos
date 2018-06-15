@@ -16,6 +16,7 @@ $result = $stmt->fetchAll();
 
 $email = $result[0][1];
 $nome = $result[0][2];
+$usr_id= $result[0][0];
 ?>
 
 <body id="loginBackground">
@@ -29,7 +30,7 @@ $nome = $result[0][2];
 		<div class="login-form-1">
 			<!-- <form action="form.php" id="login-form" class="text-left" method="POST"> -->
 
-			<form action="save_user.php?id=<?= $id ?>" method="POST">
+			<form action="save_user.php?id=<?= $usr_id ?>" method="POST">
 				<label>Nome</label><br>
 				<input type="text" name="nome" value="<?=$nome?>"><br>
 				<label>Nova Senha</label><br>
