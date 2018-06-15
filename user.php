@@ -2,6 +2,7 @@
 include 'cabecario.php';
 
 $user = $_SESSION['user'];
+$role = $_SESSION['user-role'];
 $sql = "SELECT * FROM users WHERE usr_nome = '$user'";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
@@ -32,13 +33,17 @@ $stmt->execute();
 					$email = $result['usr_email'];
 					?>
 					<tr>
-						<th>Nome</th>
+						<th>Nome: </th>
 						<td><?= $nome ?></td>
 					</tr>	
 					<tr>
-						<th>Email</th>
+						<th>Email: </th>
 						<td><?= $email ?></td>
-					</tr>					
+					</tr>		
+					<tr>
+						<th>Função: </th>
+						<td><?= $role ?></td>
+					</tr>			
 				<?php } ?>
 			</table>
 		</div>

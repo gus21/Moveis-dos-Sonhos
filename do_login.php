@@ -37,19 +37,20 @@ $pw = md5($_POST['senha']);
 	}
 }*/
 // autenticar($user, $pw);
-$sql = "SELECT * FROM users WHERE usr_nome = '$user' AND usr_senha = '$pw'";
+$sql = "SELECT usr_roles.`rol_nome` AS role FROM users 
+INNER JOIN usr_roles ON users.`usr_rol_id`= usr_roles.`rol_id` 
+WHERE usr_nome = '$user' AND usr_senha = '$pw'";
 $stmt = $pdo->prepare($sql);
 $result = $stmt->execute();
-$rows = $stmt->rowCount();
+$rows = $stmt->fetchAll();
 
-var_dump($result);
-
-if ($rows > 0) {
+if ($rows) {
 	$_SESSION['user'] = $user;
-	//header("location:index.php");
+	$_SESSION['user-role'] = $rows[0]['role'];
+	header("location:index.php");
 
 }else{
 	$_SESSION['error'] = 1;
-	//header("location:login.php");
+	header("location:login.php");
 }
 ?>

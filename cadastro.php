@@ -37,11 +37,11 @@ $result = $stmt->fetchAll();
 								<input type="password" class="form-control" id="lg_password" autocomplete="off" name="senha" placeholder="Senha" required>
 							</div>
 							<div>
-								<select style="margin-top: 3px;">
+								<select name="role" style="margin-top: 3px;">
 									<option>Selecione Sua Função</option>
 									<?php
 									foreach ($result as $row) {
-										echo "<option name=\"role\" value=\"".$row['rol_id']."\">".$row['rol_nome']."</option>";
+										echo "<option value=\"".$row['rol_id']."\">".$row['rol_nome']."</option>";
 									}
 									?>
 								</select>

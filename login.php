@@ -1,5 +1,6 @@
 <?php
 	include 'cabecario.php';
+	echo $_SESSION['sucess-cadastro'];
 ?>
 
 <body id="loginBackground">
@@ -30,6 +31,7 @@
 			?>
 		<!-- Main Form -->
 		<div class="login-form-1">
+			<?php echo $_SESSION['sucess-cadastro']; ?>
 			<form action="do_login.php" id="login-form" class="text-left" method="POST">
 				<!--Gambiarra pra não auto_preencher os campos do form-->
 				<input type="text" name="usuario" style="display:none">
