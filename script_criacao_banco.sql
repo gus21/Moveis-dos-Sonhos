@@ -21,7 +21,7 @@ CONSTRAINT fk_rol_usr FOREIGN KEY (usr_rol_id) REFERENCES usr_roles(rol_id)
 CREATE TABLE moveis(
 mov_id INT NOT NULL AUTO_INCREMENT,
 mov_nome VARCHAR(40) NOT NULL,
-mov_img VARCHAR(40) NOT NULL,
+mov_img VARCHAR(200) NOT NULL,
 mov_preco DECIMAL(6,2) NOT NULL,
 mov_estoque INT NOT NULL,
 mov_descricao TEXT,

@@ -1,6 +1,13 @@
 <?php
 require_once 'conexao.php';
 
+session_start();
+
+if ($_POST['role']==0) {
+
+	$_SESSION["role_vazia"]=1;
+	header('location: cadastro.php');
+}
 
 $role = $_POST['role'];
 $user  = $_POST['usuario'];

@@ -12,6 +12,10 @@ $result = $stmt->fetchAll();
 	<!-- LOGIN FORM -->
 	<div class="text-center" style="padding:50px 0">
 		<div class="logo"><em>Cadastrar</em></div>
+		<?php if(isset($_SESSION['role_vazia'])):?>
+			<center><span class="error-login"> Selecione uma Função</span></center> 
+			<?php unset($_SESSION['role_vazia']); ?>
+		<?php  endif;?>
 		<!-- Main Form -->
 		<div class="login-form-1">
 			<!-- <form action="form.php" id="login-form" class="text-left" method="POST"> -->
@@ -37,8 +41,8 @@ $result = $stmt->fetchAll();
 								<input type="password" class="form-control" id="lg_password" autocomplete="off" name="senha" placeholder="Senha" required>
 							</div>
 							<div>
-								<select name="role" style="margin-top: 3px;">
-									<option>Selecione Sua Função</option>
+								<select name="role" required="required" style="margin-top: 3px;">
+									<option value="0">Selecione Sua Função</option>
 									<?php
 									foreach ($result as $row) {
 										echo "<option value=\"".$row['rol_id']."\">".$row['rol_nome']."</option>";
@@ -60,3 +64,5 @@ $result = $stmt->fetchAll();
 
 	</body>
 	</html>
+
+	

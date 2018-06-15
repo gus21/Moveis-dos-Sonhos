@@ -7,13 +7,14 @@
 </head>
 <body id="loginBackground">
 	<?php
-		include 'cabecario.php';
+	include 'cabecario.php';
 	?>
 
 	<!-- Where all the magic happens -->
 	<!-- LOGIN FORM -->
 	<div class="text-center">
 		<div class="logo"><em>Cadastrar</em></div>
+		
 		<!-- Main Form -->
 		<div class="login-form-1">
 			<form action="produtoCadastrar.php" id="login-form" class="text-left" method="POST" enctype="multipart/form-data">
@@ -29,9 +30,7 @@
 						<div class="form-group">
 							<input type="text" class="form-control" id="lg_price" name="preco" placeholder="Preço" required>
 						</div>
-						<div class="form-group">
-							<input type="text" class="form-control" id="lg_price" name="descricao" placeholder="Descriçao" required>
-						</div>
+						
 						<div class="form-group">
 							<input type="number" class="form-control" id="lg_price" name="estoque" placeholder="estoque" required>
 						</div>
@@ -61,9 +60,9 @@
 		<!-- end:Main Form -->
 	</div>
 	
-<?php 
+	<?php 
 	include 'rodape.php';
-?>	
+	?>	
 	<script type="text/javascript" >
 		$(document).ready( function() {
 			$(document).on('change', '.btn-file :file', function() {
@@ -103,3 +102,6 @@
 	</script>
 </body>
 </html>
+
+
+
