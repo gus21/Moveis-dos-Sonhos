@@ -3,9 +3,12 @@ require_once 'conexao.php';
 
 session_start();
 
+$user_id=$_SESSION["user-id"];
+
 $nome=$_POST['produto'];
 $descricao=$_POST['descricao'];
 $preco=$_POST['preco'];
+$categoria=$_POST['categoria'];
 $estoque=$_POST['estoque'];
 //$categoria=$_POST['categoria'];
 $img = $_FILES['arquivo']['name'];
@@ -31,14 +34,16 @@ $img = $_FILES['arquivo']['name'];
 
 
 
-$sql = "INSERT INTO moveis (mov_nome, mov_img, mov_preco, mov_estoque, mov_descricao) VALUES (:mov_nome, :mov_img, :mov_preco, :mov_estoque, :mov_descricao)";
+$sql = "INSERT INTO moveis (mov_nome, mov_img, mov_preco, mov_estoque, mov_descricao,mov_categoria,mov_usr_id) VALUES (:mov_nome, :mov_img, :mov_preco, :mov_estoque, :mov_descricao, :mov_categoria, :mov_usr_id)";
 
 $stmt = $pdo->prepare( $sql );
 $stmt->bindParam( ':mov_nome', $nome );
 $stmt->bindParam( ':mov_img', $destino );
 $stmt->bindParam( ':mov_preco', $preco );
+$stmt->bindParam( ':mov_categoria', $categoria );
 $stmt->bindParam( ':mov_estoque', $estoque );
 $stmt->bindParam( ':mov_descricao', $descricao );
+$stmt->bindParam( ':mov_usr_id', $user_id );
 //$stmt->bindParam( ':mov_categoria', $categoria );
 
 
