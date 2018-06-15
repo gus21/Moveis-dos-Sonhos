@@ -73,6 +73,14 @@ require_once 'conexao.php';
 
 			</li>
 			<li class="li">
+				<?php if ($_SESSION['user-role']=="admin") :?>
+					<a href="list_users.php" class="a" style="padding-top: 24px;">
+					<span class="glyphicon glyphicon-cog" id="botao-adm">Gerenciar</span>
+					</a>
+				<?php endif ?>
+
+			</li>
+			<li class="li">
 				<a href="produtos.php" class="link-header a">
 					<span class="glyphicon glyphicon-tags" id= "botao-produtos" >	</span>
 					Produtos

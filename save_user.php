@@ -10,6 +10,9 @@ $stmt = $pdo->prepare("UPDATE users SET  usr_nome = ?, usr_senha = ?, usr_email 
 $stmt->execute(array($nome,$senha,$email,$id));
 if($stmt){
 	$_SESSION['user'] = $nome;
+	if($_SESSION['role']=='admin'){
+		header('location: list_users.php');
+	}
 	header('location: user.php');
 }else{
 	$pdo->errorInfo();

@@ -36,7 +36,7 @@ $nome = $result[0][2];
 				<input type="password" name="senha"><br>
 				<label>Email</label><br>
 				<input type="email" name="email" value="<?=$email?>"> <br> <br>
-				<!--<input type="hidden" value="<?=$role?>">-->
+				<input type="hidden" name="role" value="<?=$role?>">
 				<input type="submit" class="button btn-primary" value="Salvar">
 			</form>					
 
