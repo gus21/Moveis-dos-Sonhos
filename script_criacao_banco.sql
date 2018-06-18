@@ -1,4 +1,4 @@
-DROP DATABASE moveis_dos_sonhos;
+
 CREATE DATABASE moveis_dos_sonhos;
 USE moveis_dos_sonhos;
 
@@ -23,7 +23,7 @@ mov_id INT NOT NULL AUTO_INCREMENT,
 mov_nome VARCHAR(40) NOT NULL,
 mov_img VARCHAR(200) NOT NULL,
 mov_preco DECIMAL(6,2) NOT NULL,
-mov_categoria VARCHAR(10) NOT NULL,
+mov_categoria VARCHAR(20) NOT NULL,
 mov_estoque INT NOT NULL,
 mov_descricao TEXT,
 mov_usr_id INT NOT NULL,

@@ -1,54 +1,56 @@
 <?php include 'cabecario.php'; ?>
 
 <?php
-$l=$_GET['l'];
-$file_produtos=array_map('str_getcsv', file('produtos.csv'));
-$head=array_shift($file_produtos);
-$dados=array();
-foreach ($file_produtos as $key) {
-	$dados[]=array_combine($head, $key);
-}
+$id=$_GET['id'];
+$stmt = $pdo->prepare("SELECT * FROM moveis");
+
+$stmt->execute();
+
+$result = $stmt->fetchAll();
+
 ?>
 
 <div class="container">
     <div class="card">
         <div class="container-fliud">
             <div class="wrapper row">
+            <?php foreach ($result as $key) : ?>
                 <div class="preview col-md-6">
                     <div class="preview-pic tab-content">
                         <div class="tab-pane active" id="pic-1">
-                        	<?php echo "<img src=\"".$dados[$l]['IMG']."\">"; ?>
-                       	</div>
+                            <?php echo "<img src=\"".$key[2]."\">"; ?>
+                        </div>
                     </div>
 
                 </div>
                 <div class="details col-md-6">
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Nome</div>
+                            <div class="panel-title"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Nome</div>
                         </h3>
                         <hr>
-                    <h4><?php echo strtoupper($dados[$l]['NOME']); ?></h4>
+                    <h4><?php echo strtoupper($key[1]); ?></h4>
                     </div>
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-comment"></span>&nbsp;Descriçao</div>
+                            <div class="panel-title"><span class="glyphicon glyphicon-comment"></span>&nbsp;Descriçao</div>
                         </h3>
                         <hr>
                         <h4>
-							<?php echo strtoupper($dados[$l]['DESCRICAO']); ?>
+                            <?php echo strtoupper($key[6]); ?>
                         </h4>
                     </div>
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;Valor</div>
+                            <div class="panel-title"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;Valor</div>
                         </h3>
                         <hr>
                         <h2>
-                        	<?php echo strtoupper($dados[$l]['PRECO']); ?>
+                            <?php echo strtoupper($key[3]); ?>
                         </h2>
                     </div>
                 </div>
+               <?php endforeach ?> 
             </div>
         </div>
     </div>
