@@ -48,7 +48,7 @@ $result = $stmt->fetch(PDO::FETCH_ASSOC);
                         </h2>
                     </div>
                     <div>
-                        <a href="">Edit
+                        <a href="edit_produto.php?id=<?=$id?>&flag=<?=$_SESSION['user']?>">Edit
                             <span class="glyphicon glyphicon-edit"></span>
                         </a>
                          <a href="deletar_produtos.php?id=<?=$id?>&flag=<?=$_SESSION['user']?>">Delete<span class="glyphicon glyphicon-trash"></span>
