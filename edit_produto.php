@@ -27,7 +27,7 @@ $descricao= $result[0][6];
 		<small style="font-size: 12px; opacity: 0.8;"></small></div>
 		<center>
 			<div class="login-form-1">	
-				<form action="" method="POST">
+				<form action="edit_produto.php" method="POST">
 					<label>Nome</label><br>
 					<input type="text" name="nome" value="<?=$nome?>"><br>
 					<label>descriçao</label><br>
