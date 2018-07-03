@@ -31,7 +31,17 @@ CONSTRAINT pk_mov PRIMARY KEY (mov_id),
 CONSTRAINT fk_mov_usr FOREIGN KEY (mov_usr_id) REFERENCES users(usr_id)
 );
 
+
 insert into usr_roles (rol_nome) values("admin");
 insert into usr_roles (rol_nome) values("vendedor");
 insert into usr_roles (rol_nome) values("cliente");
 INSERT INTO users (usr_email,usr_nome, usr_senha,usr_rol_id) VALUES ("admin@admin.com","admin","21232f297a57a5a743894a0e4a801fc3",1);
+
+CREATE TABLE comments(
+id INT NOT NULL AUTO_INCREMENT,
+nome VARCHAR(40) NOT NULL,
+textarea 	VARCHAR(250) NOT NULL,
+bom int (11) NOT NULL,
+ruim int (11) NOT NULL,
+CONSTRAINT pk_com PRIMARY KEY(id)
+);
