@@ -2,7 +2,6 @@
 include 'cabecario.php';
 $id = $_GET['id'];
 
-session_start();
 require_once 'conexao.php';
 
 $id = $_GET['id'];

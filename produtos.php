@@ -2,12 +2,12 @@
 
 
 <?php
-$rows   = array_map('str_getcsv', file('produtos.csv'));
-$header = array_shift($rows);
-$csv    = array();
-foreach($rows as $row) {
-  $csv[] = array_combine($header, $row);
-}
+$stmt = $pdo->prepare("SELECT * FROM moveis");
+
+$stmt->execute();
+
+$result = $stmt->fetchAll();
+
 if(isset($_GET['busca'])){
   $busca = $_GET['busca']; 
   //echo $busca;
@@ -18,22 +18,23 @@ if(isset($_GET['busca'])){
 		<center><span class="sucess-produto"> Produto Cadastrado com Sucesso </span></center> 
 		<?php unset($_SESSION['sucess-produto']); ?>
 	<?php  endif;?>
-  <?php foreach ($csv as $line => $valores) : ?>
+  <?php foreach ($result as $valores) : ?>
     <div class="produto">
-    	<a href="produtos_detalhes.php?l=<?=$line?>">
-      <?php echo "<img class=\"img\" src=\"".$valores['IMG']."\">"; ?>
+    	<a href="produtos_detalhes.php?id=<?=$valores['mov_id']?>">
+      <?php echo "<img class=\"img\" src=\"".$valores[2]."\">"; ?>
   		</a>
        <center>
-       	<span class="detalhes-produto" id= "desc-pro-nome"> <?php echo $valores['NOME'] ?> </span>
+       	<span class="detalhes-produto" id= "desc-pro-nome"> <?php echo $valores[1] ?> </span>
        </center>
       <!-- <span class="detalhes-produto" id= "desc-pro-descricao"> <?php /*echo $line['DESCRICAO']*/ ?> </span> -->
       <center>
-      	<span class="detalhes-produto" id= "desc-pro-preco"> <?php echo "R$".$valores['PRECO'] ?> </span>
+      	<span class="detalhes-produto" id= "desc-pro-preco"> <?php echo "R$".$valores[3] ?> </span>
       </center>
       <!-- <span class="detalhes-produto" id= "desc-pro-estoque"> <?php /*echo $line['ESTOQUE']*/ ?> </span> -->
     </div>
   <?php endforeach?> 
 </div>
+
 <?php include 'rodape.php'; ?>  
 
 

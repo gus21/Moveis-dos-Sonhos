@@ -1,13 +1,12 @@
 <?php include 'cabecario.php'; ?>
 
 <?php
-$l=$_GET['l'];
-$file_produtos=array_map('str_getcsv', file('produtos.csv'));
-$head=array_shift($file_produtos);
-$dados=array();
-foreach ($file_produtos as $key) {
-	$dados[]=array_combine($head, $key);
-}
+$id=$_GET['id'];
+$stmt = $pdo->prepare("SELECT * FROM moveis where mov_id = '$id'");
+
+$stmt->execute();
+
+$result = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <div class="container">
@@ -17,36 +16,43 @@ foreach ($file_produtos as $key) {
                 <div class="preview col-md-6">
                     <div class="preview-pic tab-content">
                         <div class="tab-pane active" id="pic-1">
-                        	<?php echo "<img src=\"".$dados[$l]['IMG']."\">"; ?>
-                       	</div>
+                            <?php echo "<img src=\"".$result['mov_img']."\">"; ?>
+                        </div>
                     </div>
 
                 </div>
                 <div class="details col-md-6">
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Nome</div>
+                            <div class="panel-title"><span class="glyphicon glyphicon-list-alt"></span>&nbsp;Nome</div>
                         </h3>
                         <hr>
-                    <h4><?php echo strtoupper($dados[$l]['NOME']); ?></h4>
+                    <h4><?php echo strtoupper($result['mov_nome']) ?></h4>
                     </div>
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-comment"></span>&nbsp;Descriçao</div>
+                            <div class="panel-title"><span class="glyphicon glyphicon-comment"></span>&nbsp;Descriçao</div>
                         </h3>
                         <hr>
                         <h4>
-							<?php echo strtoupper($dados[$l]['DESCRICAO']); ?>
+                            <?php echo strtoupper($result['mov_descricao']); ?>
                         </h4>
                     </div>
                     <div class="panel panel-default text-center">
                         <h3>
-                        	<div class="panel-title"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;Valor</div>
+                            <div class="panel-title"><span class="glyphicon glyphicon-credit-card"></span>&nbsp;Valor</div>
                         </h3>
                         <hr>
                         <h2>
-                        	<?php echo strtoupper($dados[$l]['PRECO']); ?>
+                            <?php echo strtoupper($result['mov_preco']); ?>
                         </h2>
+                    </div>
+                    <div>
+                        <a href="edit_produto.php?id=<?=$id?>&flag=<?=$_SESSION['user']?>">Edit
+                            <span class="glyphicon glyphicon-edit"></span>
+                        </a>
+                         <a href="deletar_produtos.php?id=<?=$id?>&flag=<?=$_SESSION['user']?>">Delete<span class="glyphicon glyphicon-trash"></span>
+                         </a>
                     </div>
                 </div>
             </div>

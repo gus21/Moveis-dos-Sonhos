@@ -2,11 +2,10 @@
 
 if($_SESSION['user-role']=='admin'){
 
-    session_start();
 
     require_once 'conexao.php';
 
-    $id = $_GET['id'];
+    //$id = $_GET['id'];
     $role= $_SESSION['user-role'];
 
     $stmt = $pdo->prepare("SELECT * FROM users");

@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/projetoCss.css">
-	<link rel="stylesheet" type="text/css" href="css/produtosForm.css">
-</head>
-<body id="loginBackground">
-	<?php
-	include 'cabecario.php';
-	?>
+<?php 
+include 'cabecario.php';
 
-<body id="loginBackground">
-	
-	<div class="text-center">
+require_once 'conexao.php';
+
+$id=$_GET['id'];
+
+$stmt = $pdo->prepare("SELECT * FROM users WHERE usr_id = ?");
+
+$stmt->execute(array($id));
+ ?>
+ 
+<div class="text-center">
 		<div class="logo"><em>Cadastrar</em></div>
 		
 		<div class="login-form-1">
@@ -47,49 +45,3 @@
 			</form>
 		</div>
 	</div>
-	
-	<?php 
-	include 'rodape.php';
-	?>	
-	<script type="text/javascript" >
-		$(document).ready( function() {
-			$(document).on('change', '.btn-file :file', function() {
-				var input = $(this),
-				label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
-				input.trigger('fileselect', [label]);
-			});
-
-			$('.btn-file :file').on('fileselect', function(event, label) {
-
-				var input = $(this).parents('.input-group').find(':text'),
-				log = label;
-
-				if( input.length ) {
-					input.val(log);
-				} else {
-					if( log ) alert(log);
-				}
-
-			});
-			function readURL(input) {
-				if (input.files && input.files[0]) {
-					var reader = new FileReader();
-
-					reader.onload = function (e) {
-						$('#img-upload').attr('src', e.target.result);
-					}
-
-					reader.readAsDataURL(input.files[0]);
-				}
-			}
-
-			$("#imgInp").change(function(){
-				readURL(this);
-			}); 	
-		});
-	</script>
-</body>
-</html>
-
-
-

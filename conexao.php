@@ -4,7 +4,7 @@ $user = 'root';
 $password = 'serbinario';
 $dbName = 'moveis_dos_sonhos';
 
-$dsn = 'mysql:host=' . $host . ';dbname=' . $dbName;
+$dsn = 'mysql:host=' . $host . ';dbname=' . $dbName . ';port=13306';
 $pdo = new PDO($dsn, $user, $password);
 
 try {

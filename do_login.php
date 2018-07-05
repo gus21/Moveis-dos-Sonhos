@@ -50,7 +50,6 @@ if ($rows) {
 
 }else{
 	$_SESSION['error'] = 1;
-		var_dump($stmt->errorInfo());
-	//header("location:login.php");
+	header("location:login.php");
 }
 ?>
