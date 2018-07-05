@@ -5,25 +5,48 @@
 <link rel="stylesheet" type="text/css" href="css/grid.css">
 <!------ Include the above in your HEAD tag ---------->
 <?php
-$stmt = $pdo->prepare("SELECT * FROM moveis");
+$stmt = $pdo->prepare("SELECT * FROM moveis order by mov_id DESC LIMIT 4");
 $stmt->execute();
-
-$result = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
 <!-- mobile showcase -->
     <div class="space-medium">
         <div class="container">
             <div class="row">
+                <?php while($result = $stmt->fetch(PDO::FETCH_ASSOC)) { ?>
+                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                        <div class="showcase-block">
+                            <div class="display-logo">
+                               <h4><?php echo strtoupper($result['mov_nome']); ?></h4>
+                               <h2><?php echo strtoupper($result['mov_preco']); ?></h2><h2>
+                            </div>
+                            <div class="showcase-img">
+                               <?php echo "<img class='img_moveis' src=\"".$result['mov_img']."\">"; ?>
+                            </div>
+                        </div>
+                    </div>
+                <?php } ?>
+
+                <!-- <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                    <div class="showcase-block">
+                        <div class="display-logo">
+                           <h4><?php echo strtoupper($result['mov_nome']) ?></h4>
+                           <h2><?php echo strtoupper($result['mov_preco']); ?></h2>
+                        </div>
+                        <div class="showcase-img">
+                           <?php echo "<img src=\"".$result['mov_img']."\">"; ?>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="showcase-block">
                         <div class="display-logo">
-                           <!--<h2><h4><?php echo strtoupper($result['mov_nome']) ?></h4>
-                           <h2><?php echo strtoupper($result['mov_preco']); ?></h2><h2>-->
+                           <h4><?php echo strtoupper($result['mov_nome']) ?></h4>
+                           <h2><?php echo strtoupper($result['mov_preco']); ?></h2>
                         </div>
                         <div class="showcase-img">
-                           <!--<?php echo "<img src=\"".$result['mov_img']."\">"; ?>-->
+                           <?php echo "<img src=\"".$result['mov_img']."\">"; ?>
                         </div>
                     </div>
                 </div>
@@ -31,36 +54,14 @@ $result = $stmt->fetch(PDO::FETCH_ASSOC);
                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="showcase-block">
                         <div class="display-logo">
-                            <a href="#">  <img src="" alt=""></a>
+                           <h4><?php echo strtoupper($result['mov_nome']) ?></h4>
+                           <h2><?php echo strtoupper($result['mov_preco']); ?></h2>
                         </div>
                         <div class="showcase-img">
-                            <a href="#"> <img src="" alt="">
-                            </a>
+                           <?php echo "<img src=\"".$result['mov_img']."\">"; ?>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="showcase-block">
-                        <div class="display-logo ">
-                            <a href="#"><img src="" alt=""></a>
-                        </div>
-                        <div class="showcase-img">
-                            <a href="#">    <img src="" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                    <div class="showcase-block">
-                        <div class="display-logo ">
-                            <a href="#">  <img src="" alt=""></a>
-                        </div>
-                        <div class="showcase-img">
-                            <a href="#"> <img src="" alt=""></a>
-                        </div>
-                    </div>
-                </div>
+                </div> -->
 
             </div>
         </div>

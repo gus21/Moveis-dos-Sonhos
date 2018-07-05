@@ -4,7 +4,6 @@ $id = $_GET['id'];
 
 require_once 'conexao.php';
 
-$id = $_GET['id'];
 $role= $_SESSION['user-role'];
 
 $stmt = $pdo->prepare("SELECT * FROM moveis WHERE mov_id = ?");
@@ -37,7 +36,8 @@ $descricao= $result[0][6];
 					<label>categoria</label><br>
 					<input type="text" name="categoria" value="<?=$categoria?>"><br>
 					<label>estoque</label><br>
-					<input type="munber" name="estoque" value="<?=$estoque?>"><br>
+					<input type="hidden" name="id" value="<?=$id?>">
+					<input type="number" name="estoque" value="<?=$estoque?>"><br>
 					<label>img</label><br>
 					<input type="text" name="img" value="<?=$img?>"><br>
 					<input type="submit" class="button btn-primary" value="Salvar">
