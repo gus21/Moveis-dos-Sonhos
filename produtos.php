@@ -2,15 +2,23 @@
 
 
 <?php
-$stmt = $pdo->prepare("SELECT * FROM moveis");
-
-$stmt->execute();
-
-$result = $stmt->fetchAll();
+require_once 'conexao.php';
 
 if(isset($_GET['busca'])){
   $busca = $_GET['busca']; 
-  //echo $busca;
+  echo $busca;
+  $stmt = $pdo->prepare("SELECT * FROM moveis WHERE mov_nome LIKE '%$busca%'");
+
+  $stmt->execute();
+
+  $result = $stmt->fetchAll();
+
+}else{
+  $stmt = $pdo->prepare("SELECT * FROM moveis");
+
+  $stmt->execute();
+
+  $result = $stmt->fetchAll();
 }
 ?>
 <div class="container">  
@@ -21,11 +29,11 @@ if(isset($_GET['busca'])){
   <?php foreach ($result as $valores) : ?>
     <div class="produto">
     	<a href="produtos_detalhes.php?id=<?=$valores['mov_id']?>">
-      <?php echo "<img class=\"img\" src=\"".$valores[2]."\">"; ?>
-  		</a>
-       <center>
-       	<span class="detalhes-produto" id= "desc-pro-nome"> <?php echo $valores[1] ?> </span>
-       </center>
+        <?php echo "<img class=\"img\" src=\"".$valores[2]."\">"; ?>
+      </a>
+      <center>
+        <span class="detalhes-produto" id= "desc-pro-nome"> <?php echo $valores[1] ?> </span>
+      </center>
       <!-- <span class="detalhes-produto" id= "desc-pro-descricao"> <?php /*echo $line['DESCRICAO']*/ ?> </span> -->
       <center>
       	<span class="detalhes-produto" id= "desc-pro-preco"> <?php echo "R$".$valores[3] ?> </span>
