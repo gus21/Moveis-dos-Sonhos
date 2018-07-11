@@ -1,17 +1,32 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>-->
+<link rel="stylesheet" type="text/css" href="css/carrosel.css">
 <!------ Include the above in your HEAD tag ---------->
+<?php
+require_once 'conexao.php';
 
-<div class="container" >    <?php
-  $rows   = array_map('str_getcsv', file('produtos.csv'));
-  $header = array_shift($rows);
-  $csv    = array();
-  foreach($rows as $row) {
-    $csv[] = array_combine($header, $row);
+if(isset($_GET['busca'])){
+  $busca = $_GET['busca']; 
+  echo $busca;
+  $stmt = $pdo->prepare("SELECT * FROM moveis WHERE mov_nome");
 
-  }
-  ?>
+  $stmt->execute();
+
+  $result = $stmt->fetchAll();
+
+}else{
+  $stmt = $pdo->prepare("SELECT * FROM moveis");
+
+  $stmt->execute();
+
+  $result = $stmt->fetchAll();
+}
+
+?>
+
+
+<div class="container" >
   <div class="row">
     <div id="myCarousel" class="carousel  slide">
 
@@ -23,17 +38,17 @@
 
       <center>
         <div class="carousel-inner">
-          <div class="active item" style="height: 455px !important;"> 
+          <div class="active item" style="height: 400px !important;"> 
 
-           <img src="img/img_carrossel/" >
+          <img src="img/img_carrossel/super.png">
 
          </div>
 
-         <?php foreach ($csv as $line => $valores) : ?>
+         <?php foreach ($result as $valores) : ?>
 
-          <div class="item" style="height: 455px !important;"> 
-            <a href="produtos_detalhes.php?l=<?=$line?>">
-             <?php echo "<img src=\"".$valores['IMG']."\">"; ?>
+          <div class="item" style="height: 400px !important;"> 
+            <a href="produtos_detalhes.php?id=<?=$valores['mov_id']?>">
+             <?php echo "<img src=\"".$valores['mov_img']."\">"; ?>
            </a>
          </div>
 
@@ -51,5 +66,4 @@
 </div>
 </div>
 </div>
-
 

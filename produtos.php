@@ -6,7 +6,6 @@ require_once 'conexao.php';
 
 if(isset($_GET['busca'])){
   $busca = $_GET['busca']; 
-  echo $busca;
   $stmt = $pdo->prepare("SELECT * FROM moveis WHERE mov_nome LIKE '%$busca%'");
 
   $stmt->execute();

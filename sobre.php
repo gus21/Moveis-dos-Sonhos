@@ -43,27 +43,27 @@
 	}
 
 	.lazur-bg {
-		background-color: #23c6c8;
-		color: #ffffff;
+		background-color: #09ACDB;
+		color: #09ACDB;
 	}
 
 	.red-bg {
-		background-color: #ed5565;
-		color: #ffffff;
+		background-color: #09ACDB;
+		color: #09ACDB;
 	}
 
 	.navy-bg {
-		background-color: #1ab394;
-		color: #ffffff;
+		background-color: #09ACDB;
+		color: #09ACDB;
 	}
 
 	.yellow-bg {
-		background-color: #f8ac59;
-		color: #ffffff;
+		background-color: #09ACDB;
+		color: #09ACDB;
 	}
 	.green-bg {
-		background-color: green;
-		color: #ffffff;
+		background-color: #09ACDB;
+		color: #09ACDB;
 	}
 	img{
 		position: relative;

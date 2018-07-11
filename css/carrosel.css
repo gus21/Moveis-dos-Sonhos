@@ -29,21 +29,21 @@
 
 }
 .item:nth-child(1) {
-  background: darkred;
+  background: snow;
 
 }
 
 .item:nth-child(2) {
-  background: red;
+  background: snow;
 }
 
 .item:nth-child(3) {
-  background: orange;
+  background: snow;
 }
 
 .active.item{
 
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 

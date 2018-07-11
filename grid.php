@@ -21,7 +21,9 @@ $stmt->execute();
                                <h2><?php echo strtoupper($result['mov_preco']); ?></h2><h2>
                             </div>
                             <div class="showcase-img">
+                              <a href="produtos_detalhes.php?id=<?=$result['mov_id']?>">
                                <?php echo "<img class='img_moveis' src=\"".$result['mov_img']."\">"; ?>
+                              </a>
                             </div>
                         </div>
                     </div>
