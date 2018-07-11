@@ -25,7 +25,7 @@
         <div class="carousel-inner">
           <div class="active item" style="height: 455px !important;"> 
 
-           <img src="img/img_carrossel/promoções.png" >
+           <img src="img/img_carrossel/" >
 
          </div>
 

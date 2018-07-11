@@ -43,6 +43,6 @@ if(isset($_GET['busca'])){
   <?php endforeach?> 
 </div>
 
-<?php include 'rodape.php'; ?>  
+<?php include 'rodape2.php'; ?>  
 
 

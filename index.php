@@ -20,6 +20,6 @@
 ?>
 
 <?php 
-	include 'rodape.php';
+	include 'rodape2.php';
 ?>
 </body>
